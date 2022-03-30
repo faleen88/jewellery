@@ -19,3 +19,80 @@
     url("../fonts/.woff2") format("woff2"),
     url("../fonts/.woff") format("woff");
 }
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Cormorant Garamond";
+
+  font-display: swap;
+  src:
+    url("../fonts/cormorantgaramond-regelar.woff2") format("woff2"),
+    url("../fonts/cormorantgaramond-regelar.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Cormorant Garamond";
+
+  font-display: swap;
+  src:
+    url("../fonts/cormorantgaramond-medium.woff2") format("woff2"),
+    url("../fonts/cormorantgaramond-medium.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  font-family: "Cormorant Garamond";
+
+  font-display: swap;
+  src:
+    url("../fonts/cormorantgaramond-semibold.woff2") format("woff2"),
+    url("../fonts/cormorantgaramond-semibold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Cormorant Garamond";
+
+  font-display: swap;
+  src:
+    url("../fonts/cormorantgaramond-bold.woff2") format("woff2"),
+    url("../fonts/cormorantgaramond-bold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Poppins";
+
+  font-display: swap;
+  src:
+    url("../fonts/poppins-regelar.woff2") format("woff2"),
+    url("../fonts/poppins-regelar.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Poppins";
+
+  font-display: swap;
+  src:
+    url("../fonts/poppins-medium.woff2") format("woff2"),
+    url("../fonts/poppins-medium.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Poppins";
+
+  font-display: swap;
+  src:
+    url("../fonts/poppins-bold.woff2") format("woff2"),
+    url("../fonts/poppins-bold.woff") format("woff");
+}
