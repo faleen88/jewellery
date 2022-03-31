@@ -1,0 +1,26 @@
+.user-nav__link  {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  margin-left: 32px;
+  color: $color-wood-bark;
+
+  &--cart svg {
+    display: none;
+  }
+
+  &--cart span {
+    margin-left: 2px;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover {
+      color: $color-medium-wood;
+    }
+  }
+
+  &:active {
+    color: $color-medium-wood;
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,45 @@
+.nav {
+  text-align: center;
+  font-family: $ff-poppins;
+}
+
+.nav__main-nav {
+  border-bottom: 1px solid $color-seashell;
+}
+
+.nav__container {
+  display: grid;
+  grid-template-columns: 1fr 166px 1fr;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__logo {
+  padding: 30px 50px 12px;
+}
+
+.nav__toggle {
+  display: none;
+}
+
+.nav__search {
+  padding-top: 33px;
+  text-align: start;
+}
+
+.nav__user-nav {
+  padding-top: 40px;
+  text-align: end;
+}
+
+.nav__product-nav {
+  padding: 19px 0 18px 11px;
+}
+
+.nav__company-nav {
+  display: none;
+}

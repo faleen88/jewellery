@@ -12,47 +12,55 @@
     <div class="wrapper">
 
       <header class="main-header">
-        <div class="container">
-          <nav class="main-header__nav nav nav--closed nav--nojs">
-            <!-- nav--closed и nav--opened - классы, переключающие состояния меню -->
-            <div class="nav__logo logo">
-              <a class="logo__link">
-                <svg width="66" height="66">
-                  <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
-                </svg>
-              </a>
-            </div>
-            <button class="nav__toggle">
-              <span class="visually-hidden">Открыть меню</span>
-              <svg width="25" height="16">
-                <use xlink:href="img/sprite_auto.svg#icon-menu"></use>
-              </svg>
-            </button>
-            <div class="nav__search">
-              <form action="#" method="get">
-                <svg width="14" height="14">
-                  <use xlink:href="img/sprite_auto.svg#icon-search"></use>
-                </svg>
-                <input name="search" placeholder="Type here to search" type="search">
-                <button type="submit"></button>
-              </form>
-            </div>
-            <a class="nav__login-link">Login</a>
-            <a class="nav__cart-link">
-              <svg width="18" height="16">
-                <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
-              </svg>
-              Cart
-              <span>0</span>
-            </a>
 
-            <div class="nav__main-nav main-nav">
+        <nav class="main-header__nav nav nav--closed nav--nojs">
+          <!-- nav--closed и nav--opened - классы, переключающие состояния меню -->
+          <div class="nav__main-nav">
+            <div class="nav__container container">
+              <button class="nav__toggle">
+                <span class="visually-hidden">Открыть меню</span>
+                <svg width="25" height="16">
+                  <use xlink:href="img/sprite_auto.svg#icon-menu"></use>
+                </svg>
+              </button>
+              <div class="nav__search search">
+                <form action="#" method="get">
+                  <div class="search__form">
+                    <svg width="14" height="14">
+                      <use xlink:href="img/sprite_auto.svg#icon-search"></use>
+                    </svg>
+                    <input name="search" placeholder="Type here to search" type="search">
+                    <button class="search__button visually-hidden" type="submit"></button>
+                  </div>
+                </form>
+              </div>
+              <div class="nav__logo logo">
+                <a class="logo__link" tabindex="1">
+                  <svg width="66" height="66">
+                    <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="nav__user-nav user-nav">
+                <a class="user-nav__link user-nav__link--login" href="#">Login</a>
+                <a class="user-nav__link user-nav__link--cart" href="#">
+                  <svg width="18" height="16">
+                    <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+                  </svg>
+                  Cart
+                  <span>0</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="nav__product-nav product-nav product-nav">
               <ul>
-                <li><a class="main-nav__link" href="#">What&prime;s new</a>
-                <li><a class="main-nav__link" href="#">Chokers</a></li>
-                <li><a class="main-nav__link" href="#">Necklaces</a></li>
-                <li><a class="main-nav__link" href="#">Rings</a></li>
-                <li><a class="main-nav__link" href="#">Earrings</a></li>
+                <li><a class="product-nav__link" href="#">What&prime;s new</a>
+                <li><a class="product-nav__link" href="#">Chokers</a></li>
+                <li><a class="product-nav__link" href="#">Necklaces</a></li>
+                <li><a class="product-nav__link" href="#">Rings</a></li>
+                <li><a class="product-nav__link" href="#">Earrings</a></li>
               </ul>
             </div>
             <div class="nav__company-nav company-nav">
@@ -62,8 +70,9 @@
                 <li><a class="company-nav__link" href="#">Contact Us</a></li>
               </ul>
             </div>
-          </nav>
-        </div>
+          </div>
+        </nav>
+
       </header>
 
       <main>

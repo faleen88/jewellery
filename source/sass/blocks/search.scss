@@ -1,0 +1,33 @@
+.search__form {
+  position: relative;
+
+  &:hover {
+    svg {
+      fill: $color-medium-wood;
+    }
+  }
+
+  &:active,
+  &:focus {
+    svg {
+      fill: $color-medium-wood;
+    }
+  }
+}
+
+.search__form svg {
+}
+
+.search__form input {
+  min-height: 40px;
+  width: 400px;
+  padding-left: 12px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  border: none;
+}
+
+.search__button {
+  position: absolute;
+}

@@ -1,0 +1,26 @@
+.product-nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+.product-nav li {
+  margin: 0 18px;
+}
+
+.product-nav__link {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: $color-wood-bark;
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover {
+      color: $color-medium-wood;
+    }
+  }
+
+  &:active {
+    color: $color-medium-wood;
+    opacity: 0.5;
+  }
+}

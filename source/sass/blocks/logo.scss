@@ -1,0 +1,11 @@
+.logo svg {
+  fill: $color-medium-wood;
+
+  &:hover {
+    fill: $color-wood-bark;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
