@@ -5,6 +5,10 @@
 
 .nav__main-nav {
   border-bottom: 1px solid $color-seashell;
+
+  @include vp-1023 {
+    border-bottom: none;
+  }
 }
 
 .nav__container {
@@ -24,22 +28,181 @@
 
 .nav__toggle {
   display: none;
+  text-align: start;
+  cursor: pointer;
+  height: 18px;
+  padding-top: 54px;
+  border: none;
+  background-color: $color-transparent;
+
+  @include vp-1023 {
+    display: block;
+  }
+
+  svg {
+    stroke: $color-wood-bark;
+    stroke-width: 2px;
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }
 
 .nav__search {
   padding-top: 33px;
   text-align: start;
+
+  @include vp-1023 {
+    padding-top: 23px;
+    margin-bottom: 46px;
+    order: 10;
+    grid-column: 1 / 4;
+    width: 100%;
+  }
 }
 
 .nav__user-nav {
   padding-top: 40px;
-  text-align: end;
 }
 
 .nav__product-nav {
   padding: 19px 0 18px 11px;
+
+  @include vp-1023 {
+    padding: 0;
+  }
 }
 
 .nav__company-nav {
   display: none;
+}
+
+.nav__link {
+  display: none;
+  text-align: start;
+  font-size: 18px;
+  line-height: 23px;
+  color: $color-default-white;
+}
+
+.nav--closed {
+  .nav__search {
+    @include vp-1023 {
+      display: none;
+    }
+  }
+
+  .nav__toggle {
+    @include vp-1023 {
+      display: block;
+    }
+  }
+
+  .nav__product-nav {
+    @include vp-1023 {
+      display: none;
+    }
+  }
+
+  .nav__company-nav {
+    display: none;
+  }
+}
+
+.nav--opened {
+  @include vp-1023 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    overflow-y: scroll;
+    background-color: $color-medium-wood;
+  }
+
+  svg {
+    @include vp-1023 {
+      fill: $color-default-white;
+    }
+  }
+
+  .nav__search {
+    @include vp-1023 {
+      display: block;
+    }
+  }
+
+  .nav__product-nav {
+    @include vp-1023 {
+      display: block;
+    }
+  }
+
+  .nav__company-nav {
+    @include vp-1023 {
+      display: block;
+    }
+  }
+
+  .nav__link {
+    @include vp-1023 {
+      display: block;
+    }
+  }
+}
+
+.nav--nojs {
+  @include vp-1023 {
+    background-color: $color-medium-wood;
+  }
+
+  .nav__toggle {
+    @include vp-1023 {
+      display: none;
+    }
+  }
+
+  .nav__logo {
+    @include vp-1023 {
+      grid-column: 2 / 3;
+    }
+  }
+
+  svg {
+    @include vp-1023 {
+      fill: $color-default-white;
+    }
+  }
+
+  .nav__search {
+    @include vp-1023 {
+      display: block;
+    }
+  }
+
+  .nav__product-nav {
+    @include vp-1023 {
+      display: block;
+    }
+  }
+
+  .nav__company-nav {
+    @include vp-1023 {
+      display: block;
+    }
+  }
+
+  .nav__link {
+    @include vp-1023 {
+      display: block;
+    }
+  }
 }

@@ -1,3 +1,16 @@
+.user-nav {
+  display: flex;
+  justify-content: flex-end;
+
+  &--mobile-menu {
+    svg {
+      @include vp-1023 {
+        stroke: $color-default-white;
+      }
+    }
+  }
+}
+
 .user-nav__link  {
   font-size: 14px;
   line-height: 21px;
@@ -5,12 +18,53 @@
   margin-left: 32px;
   color: $color-wood-bark;
 
+  &--login {
+    @include vp-1023 {
+      display: none;
+    }
+  }
+
+  &--cart {
+    @include vp-1023 {
+      width: 30px;
+      height: 30px;
+      padding-top: 7px;
+    }
+  }
+
   &--cart svg {
     display: none;
+    stroke: $color-wood-bark;
+    stroke-width: 2px;
+    fill: none;
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+
+    &:active {
+      color: $color-medium-wood;
+      opacity: 0.3;
+    }
+
+    @include vp-1023 {
+      display: block;
+      margin-top: 7px;
+      margin-left: 6px;
+    }
   }
 
   &--cart span {
+    @include vp-1023 {
+      display: none;
+    }
+  }
+
+  &--cart b {
     margin-left: 2px;
+    font-weight: 500;
   }
 
   @media (hover: hover), screen and (min-width: 0\0) {

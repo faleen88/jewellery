@@ -1,31 +1,55 @@
 .search__form {
   position: relative;
 
-  &:hover {
-    svg {
-      fill: $color-medium-wood;
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover {
+      svg {
+        opacity: 0.6;
+      }
     }
   }
 
-  &:active,
-  &:focus {
+  &:active {
     svg {
-      fill: $color-medium-wood;
+      opacity: 0.3;
     }
   }
 }
 
 .search__form svg {
+  @include vp-1023 {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 12px;
+    left: 12px;
+    fill: $color-default-white;
+  }
 }
 
 .search__form input {
-  min-height: 40px;
+  min-height: 38px;
   width: 400px;
   padding-left: 12px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
   border: none;
+
+  @include vp-1279 {
+    width: 80%;
+  }
+
+  @include vp-1023 {
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+    padding-left: 40px;
+
+    &::placeholder {
+      color: $color-transparent;
+    }
+  }
 }
 
 .search__button {
