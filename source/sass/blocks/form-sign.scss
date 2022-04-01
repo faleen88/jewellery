@@ -1,0 +1,78 @@
+.form-sign {
+  padding-right: 85px;
+
+  @include vp-1279 {
+    padding-right: 10%;
+  }
+
+  @include vp-1023 {
+    margin-bottom: 48px;
+  }
+
+  @include vp-767 {
+    padding-right: 0;
+  }
+}
+
+.form-sign h3 {
+  margin: 0;
+  margin-bottom: 25px;
+  font-family: $ff-cormorant-garamond;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 44px;
+  letter-spacing: 0.03em;
+}
+
+.form-sign p {
+  margin: 0;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: $color-zorba;
+}
+
+.form-sign__wrapper {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  gap: 20px;
+  border-bottom: 1px solid $color-default-white;
+
+  @include vp-767 {
+    gap: 0;
+  }
+}
+
+.form-sign__wrapper input {
+  min-height: 40px;
+  background-color: $color-transparent;
+  border: none;
+
+  &::placeholder {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: $color-zorba;
+  }
+}
+
+.form-sign__button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: $color-default-white;
+  background-color: $color-transparent;
+  border: none;
+  cursor: pointer;
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
