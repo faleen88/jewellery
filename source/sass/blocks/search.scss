@@ -43,7 +43,7 @@
   @include vp-1023 {
     width: 100%;
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba($color: $color-default-white, $alpha: 0.15);
     padding-left: 40px;
 
     &::placeholder {

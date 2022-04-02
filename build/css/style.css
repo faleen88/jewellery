@@ -401,6 +401,14 @@ template {
 }
 
 @font-face {
+  font-style: italic;
+  font-weight: 400;
+  font-family: "Cormorant Garamond";
+  font-display: swap;
+  src: url("../fonts/cormorantgaramond-regelaritalic.woff2") format("woff2"), url("../fonts/cormorantgaramond-regelaritalic.woff") format("woff");
+}
+
+@font-face {
   font-style: normal;
   font-weight: 500;
   font-family: "Cormorant Garamond";
@@ -844,6 +852,35 @@ button,
   opacity: 1;
 }
 
+.promo {
+  background: #a87b62 url("../img/main/bg-main-desktop.jpg") no-repeat center/cover;
+  color: #ffffff;
+  font-family: "Cormorant Garamond", "Times New Roman", serif;
+  text-align: center;
+}
+
+.promo__wrapper {
+  padding: 180px 0;
+  background: rgba(86, 64, 52, 0.7);
+}
+
+.promo__wrapper h2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 58px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.promo__wrapper p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 33px;
+  line-height: 39px;
+  font-style: italic;
+}
+
 .main-footer {
   background-color: #000000;
   color: #ffffff;
@@ -1082,7 +1119,6 @@ button,
 @media (max-width: 1023px) {
   .container {
     width: 95%;
-    margin: 0;
     padding: 0 2.5%;
   }
 
@@ -1322,6 +1358,15 @@ button,
   .logo svg {
     width: 52px;
     height: 52px;
+  }
+
+  .promo__wrapper h2 {
+    font-size: 38px;
+    line-height: 49px;
+  }
+
+  .promo__wrapper p {
+    font-size: 34px;
   }
 
   .main-footer__lists {
