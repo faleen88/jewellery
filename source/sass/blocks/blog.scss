@@ -1,0 +1,58 @@
+.blog {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.blog h2 {
+  margin: 0;
+  margin-bottom: 35px;
+  font-family: $ff-cormorant-garamond;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 44px;
+  letter-spacing: 0.03em;
+}
+
+.blog__link {
+  display: block;
+  margin-bottom: 70px;
+  color: $color-wood-bark;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 64px;
+    height: 1px;
+    background-color: $color-medium-wood;
+    bottom: 0;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover {
+      &::before {
+        background-color: $color-default-white;
+      }
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.blog__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+
+  @include vp-1023 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 50px;
+  }
+
+  @include vp-767 {
+    gap: 40px;
+  }
+}
