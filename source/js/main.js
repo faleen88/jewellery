@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {initMenu} from './modules/menu';
 import {initAccordeon} from './modules/accordeon';
+import {initSwiper} from './modules/swiper';
 
 // ---------------------------------
 
@@ -21,6 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initModals();
     initMenu();
     initAccordeon();
+    initSwiper();
   });
 });
 
