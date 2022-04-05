@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Описание проекта">
+    <title>Jewellery</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body class="page__body">
+    <div class="wrapper">
+
+      <header class="main-header">
+
+        <nav class="main-header__nav nav nav--closed nav--nojs">
+          <!-- nav--closed и nav--opened - классы, переключающие состояния меню -->
+          <div class="nav__main-nav">
+            <div class="nav__container container">
+              <button class="nav__toggle">
+                <span class="visually-hidden">Открыть меню</span>
+                <svg width="25" height="18">
+                  <use xlink:href="img/sprite_auto.svg#icon-menu"></use>
+                </svg>
+              </button>
+              <div class="nav__search search">
+                <form action="#" method="get">
+                  <div class="search__form">
+                    <svg width="14" height="14">
+                      <use xlink:href="img/sprite_auto.svg#icon-search"></use>
+                    </svg>
+                    <input name="search" placeholder="Type here to search" type="search">
+                    <button class="search__button visually-hidden" type="submit"></button>
+                  </div>
+                </form>
+              </div>
+              <div class="nav__logo logo">
+                <a class="logo__link" tabindex="1">
+                  <svg width="66" height="66">
+                    <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="nav__user-nav user-nav">
+                <a class="user-nav__link user-nav__link--login" href="#">Login</a>
+                <a class="user-nav__link user-nav__link--cart" href="#">
+                  <svg width="20" height="18">
+                    <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+                  </svg>
+                  <span>Cart<b>0</b></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="nav__product-nav product-nav product-nav">
+              <ul>
+                <li><a class="product-nav__link" href="#">What&prime;s new</a>
+                <li><a class="product-nav__link" href="#">Chokers</a></li>
+                <li><a class="product-nav__link" href="#">Necklaces</a></li>
+                <li><a class="product-nav__link" href="#">Rings</a></li>
+                <li><a class="product-nav__link" href="#">Earrings</a></li>
+              </ul>
+            </div>
+            <div class="nav__company-nav company-nav">
+              <ul>
+                <li><a class="company-nav__link" href="#">About CH</a></li>
+                <li><a class="company-nav__link" href="#">Stores & Hours</a></li>
+                <li><a class="company-nav__link" href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <a class="nav__link" href="#">Login</a>
+          </div>
+        </nav>
+
+      </header>
+
+      <main class="page__main-content">
+        <h1 class="visually-hidden">Chjewellery</h1>
+        <section class="promo">
+            <div class="promo__wrapper">
+              <div class="container">
+                <h2>Perfection</h2>
+                <p>made to be yours</p>
+              </div>
+            </div>
+        </section>
+
+        <section class="new-product">
+          <div class="container">
+            <h2>New In</h2>
+            <a class="new-product__link" href="#">Shop Now</a>
+            <div class="new-product__slider">
+              <div class="slider__button slider__button--prev swiper-button-prev"></div>
+              <div class="slider__button slider__button--next swiper-button-next"></div>
+              <div class="slider swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="slider__item slide swiper-slide">
+                    <a class="slide__link" href="#">
+                      <img src="img/main/new/purple-gemstone-necklace.jpg" alt="">
+                      <p>Necklace with amethyst</p>
+                      <b>$ 145</b>
+                    </a>
+                  </div>
+                  <div class="slider__item slide swiper-slide">
+                    <a class="slide__link" href="#">
+                      <img src="img/main/new/layered-choker-necklace.jpg" alt="">
+                      <p>Layered сhoker</p>
+                      <b>$ 115</b>
+                    </a>
+                  </div>
+                  <div class="slider__item slide swiper-slide">
+                    <a class="slide__link" href="#">
+                      <img src="img/main/new/dainty-gold-necklace.jpg" alt="">
+                      <p>Gold chain</p>
+                      <b>$ 215</b>
+                    </a>
+                  </div>
+                  <div class="slider__item slide swiper-slide">
+                    <a class="slide__link" href="#">
+                      <img src="img/main/new/galaxy-earrings.jpg" alt="">
+                      <p>Galaxy earrings</p>
+                      <b>$ 95</b>
+                    </a>
+                  </div>
+                  <div class="slider__item slide swiper-slide">
+                    <a class="slide__link" href="#">
+                      <img src="img/main/new/dainty-gold-necklace.jpg" alt="">
+                      <p>Gold chain</p>
+                      <b>$ 215</b>
+                    </a>
+                  </div>
+                  <div class="slider__item slide swiper-slide">
+                    <a class="slide__link" href="#">
+                      <img src="img/main/new/galaxy-earrings.jpg" alt="">
+                      <p>Galaxy earrings</p>
+                      <b>$ 95</b>
+                    </a>
+                  </div>
+                  <div class="slider__item slide swiper-slide">
+                    <a class="slide__link" href="#">
+                      <img src="img/main/new/purple-gemstone-necklace.jpg" alt="">
+                      <p>Necklace with amethyst</p>
+                      <b>$ 145</b>
+                    </a>
+                  </div>
+                  <div class="slider__item slide swiper-slide">
+                    <a class="slide__link" href="#">
+                      <img src="img/main/new/layered-choker-necklace.jpg" alt="">
+                      <p>Layered сhoker</p>
+                      <b>$ 115</b>
+                    </a>
+                  </div>
+                  <div class="slider__item slide swiper-slide">
+                    <a class="slide__link" href="#">
+                      <img src="img/main/new/dainty-gold-necklace.jpg" alt="">
+                      <p>Gold chain</p>
+                      <b>$ 215</b>
+                    </a>
+                  </div>
+                  <div class="slider__item slide swiper-slide">
+                    <a class="slide__link" href="#">
+                      <img src="img/main/new/galaxy-earrings.jpg" alt="">
+                      <p>Galaxy earrings</p>
+                      <b>$ 95</b>
+                    </a>
+                  </div>
+                  <div class="slider__item slide swiper-slide">
+                    <a class="slide__link" href="#">
+                      <img src="img/main/new/dainty-gold-necklace.jpg" alt="">
+                      <p>Gold chain</p>
+                      <b>$ 215</b>
+                    </a>
+                  </div>
+                  <div class="slider__item slide swiper-slide">
+                    <a class="slide__link" href="#">
+                      <img src="img/main/new/galaxy-earrings.jpg" alt="">
+                      <p>Galaxy earrings</p>
+                      <b>$ 95</b>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__pagination swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="blog">
+          <div class="container">
+            <h2>Blog</h2>
+            <a class="blog__link" href="#">Read All</a>
+            <div class="blog__list">
+              <div class="blog__item item">
+                <div class="item__img">
+                  <img src="img/main/blog/care.jpg" alt="">
+                </div>
+                <div class="item__description">
+                  <p>September 30, 2019</p>
+                  <h3>How to care for your jewellery</h3>
+                  <a class="item__link" href="#">Read Article</a>
+                </div>
+              </div>
+              <div class="blog__item item">
+                <div class="item__description">
+                  <p>September 23, 2019</p>
+                  <h3>Power of crystals</h3>
+                  <a class="item__link" href="#">Read Article</a>
+                </div>
+                <div class="item__img">
+                  <img src="img/main/blog/crystals.jpg" alt="">
+                </div>
+              </div>
+              <div class="blog__item item item--special">
+                <div class="item__img">
+                  <img src="img/main/blog/trends.jpg" alt="">
+                </div>
+                <div class="item__description">
+                  <p>September 16, 2019</p>
+                  <h3>AW 19 trends</h3>
+                  <a class="item__link" href="#">Read Article</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="questions">
+          <div class="container">
+            <h2>Frequently asked questions</h2>
+            <div class="questions__wrapper accordeon accordeon--nojs">
+              <div class="questions__item accordeon__item accordeon__item--active" id="materials">
+                <button class="questions__button accordeon__button" type="button" data-item="materials">What materials are <br>the jewellery made of?</button>
+                <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+              </div>
+              <div class="questions__item accordeon__item" id="delivery">
+                <button class="questions__button accordeon__button" type="button" data-item="delivery">Which countries <br>do you deliver to?</button>
+                <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+              </div>
+              <div class="questions__item accordeon__item" id="payment">
+                <button class="questions__button accordeon__button" type="button" data-item="payment">What are the <br>payment methods?</button>
+                <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+              </div>
+              <div class="questions__item accordeon__item" id="return">
+                <button class="questions__button accordeon__button" type="button" data-item="return">Can I return the <br>jewellery if it didn&prime;t fit me?</button>
+                <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="gallery">
+          <div class="container">
+            <h2>@Chjewellery</h2>
+            <a class="gallery__link" href="#">Follow Us</a>
+            <div class="gallery__content">
+              <div class="gallery__img">
+                <img src="img/main/gallery/picture-1.jpg" alt="">
+              </div>
+              <div class="gallery__img gallery__img--special">
+                <img src="img/main/gallery/picture-2.jpg" alt="">
+              </div>
+              <div class="gallery__img gallery__img--mobile">
+                <img src="img/main/gallery/picture-3.jpg" alt="">
+              </div>
+              <div class="gallery__img gallery__img--mobile">
+                <img src="img/main/gallery/picture-4.jpg" alt="">
+              </div>
+              <div class="gallery__img">
+                <img src="img/main/gallery/picture-5.jpg" alt="">
+              </div>
+              <div class="gallery__img">
+                <img src="img/main/gallery/picture-6.jpg" alt="">
+              </div>
+              <div class="gallery__img">
+                <img src="img/main/gallery/picture-7.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="main-footer">
+        <div class="container">
+          <div class="main-footer__wrapper">
+            <section class="main-footer__form-sign form-sign">
+              <h3>The good stuff in your inbox</h3>
+              <p>News and updates from CH. No spam, we promise.</p>
+              <form action="#" method="get">
+                <div class="form-sign__wrapper">
+                  <input type="text" placeholder="Your E-mail" name="mail" required>
+                  <button class="form-sign__button" type="submit">
+                    <span>Sign Up</span>
+                    <svg width="30" height="11">
+                      <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </section>
+            <div class="main-footer__lists">
+              <section class="main-footer__information information">
+                <ul>
+                  <li><a class="information__link" href="#">Ordering & Payment</a></li>
+                  <li><a class="information__link" href="#">Terms & Conditions</a></li>
+                  <li><a class="information__link" href="#">Returns & Exchanges</a></li>
+                  <li><a class="information__link" href="#">Delivery</a></li>
+                </ul>
+              </section>
+              <section class="main-footer__company company">
+                <ul>
+                  <li><a class="company__link" href="#">About CH</a></li>
+                  <li><a class="company__link" href="#">Stores & Hours</a></li>
+                  <li><a class="company__link" href="#">Jobs</a></li>
+                  <li><a class="company__link" href="#">Contact Us</a></li>
+                </ul>
+              </section>
+              <section class="main-footer__social social">
+                <ul>
+                  <li>
+                    <a class="social__link social__link--facebook" href="#">
+                      <svg width="8" height="15">
+                        <use xlink:href="img/sprite_auto.svg#icon-facebook"></use>
+                      </svg>
+                      <span>Facebook</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="social__link" href="#">
+                      <svg width="15" height="15">
+                        <use xlink:href="img/sprite_auto.svg#icon-instagram"></use>
+                      </svg>
+                      <span>Instagram</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="social__link" href="#">
+                      <svg width="15" height="15">
+                        <use xlink:href="img/sprite_auto.svg#icon-pinterest"></use>
+                      </svg>
+                      <span>Pinterest</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="social__link social__link--twitter" href="#">
+                      <svg width="15" height="13">
+                        <use xlink:href="img/sprite_auto.svg#icon-twitter"></use>
+                      </svg>
+                      <span>Twitter</span>
+                    </a>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Описание проекта">
+    <title>Jewellery</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body class="page__body">
+    <div class="wrapper">
+
+      <header class="main-header">
+
+        <nav class="main-header__nav nav nav--closed nav--nojs">
+          <!-- nav--closed и nav--opened - классы, переключающие состояния меню -->
+          <div class="nav__main-nav">
+            <div class="nav__container container">
+              <button class="nav__toggle">
+                <span class="visually-hidden">Открыть меню</span>
+              </button>
+              <div class="nav__search search">
+                <form action="#" method="get">
+                  <div class="search__form">
+                    <svg width="14" height="14">
+                      <use xlink:href="img/sprite_auto.svg#icon-search"></use>
+                    </svg>
+                    <input name="search" placeholder="Type here to search" type="search">
+                    <button class="search__button visually-hidden" type="submit"></button>
+                  </div>
+                </form>
+              </div>
+              <div class="nav__logo logo">
+                <a class="logo__link" tabindex="1">
+                  <svg width="66" height="66">
+                    <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="nav__user-nav user-nav">
+                <a class="user-nav__link user-nav__link--login" href="#">Login</a>
+                <a class="user-nav__link user-nav__link--cart" href="#">
+                  <svg width="20" height="18">
+                    <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+                  </svg>
+                  <span>Cart<b>0</b></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="nav__product-nav product-nav product-nav">
+              <ul>
+                <li><a class="product-nav__link" href="#">What&prime;s new</a>
+                <li><a class="product-nav__link" href="#">Chokers</a></li>
+                <li><a class="product-nav__link" href="#">Necklaces</a></li>
+                <li><a class="product-nav__link" href="#">Rings</a></li>
+                <li><a class="product-nav__link" href="#">Earrings</a></li>
+              </ul>
+            </div>
+            <div class="nav__company-nav company-nav">
+              <ul>
+                <li><a class="company-nav__link" href="#">About CH</a></li>
+                <li><a class="company-nav__link" href="#">Stores & Hours</a></li>
+                <li><a class="company-nav__link" href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <a class="nav__link" href="#">Login</a>
+          </div>
+        </nav>
+
+      </header>
+
+      <main class="page__catalog-content">
+        <h1 class="visually-hidden">Chjewellery</h1>
+        <section class="promo-catalog">
+            <div class="promo-catalog__wrapper">
+              <div class="container">
+                <h2>All jewellery</h2>
+                <p>Discover picks of fashion's finest trends in our jewellery catalog</p>
+              </div>
+            </div>
+        </section>
+      </main>
+
+      <footer class="main-footer">
+        <div class="container">
+          <div class="main-footer__wrapper">
+            <section class="main-footer__form-sign form-sign">
+              <h3>The good stuff in your inbox</h3>
+              <p>News and updates from CH. No spam, we promise.</p>
+              <form action="#" method="get">
+                <div class="form-sign__wrapper">
+                  <input type="text" placeholder="Your E-mail" name="mail" required>
+                  <button class="form-sign__button" type="submit">
+                    <span>Sign Up</span>
+                    <svg width="30" height="11">
+                      <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </section>
+            <div class="main-footer__lists">
+              <section class="main-footer__information information">
+                <ul>
+                  <li><a class="information__link" href="#">Ordering & Payment</a></li>
+                  <li><a class="information__link" href="#">Terms & Conditions</a></li>
+                  <li><a class="information__link" href="#">Returns & Exchanges</a></li>
+                  <li><a class="information__link" href="#">Delivery</a></li>
+                </ul>
+              </section>
+              <section class="main-footer__company company">
+                <ul>
+                  <li><a class="company__link" href="#">About CH</a></li>
+                  <li><a class="company__link" href="#">Stores & Hours</a></li>
+                  <li><a class="company__link" href="#">Jobs</a></li>
+                  <li><a class="company__link" href="#">Contact Us</a></li>
+                </ul>
+              </section>
+              <section class="main-footer__social social">
+                <ul>
+                  <li>
+                    <a class="social__link social__link--facebook" href="#">
+                      <svg width="8" height="15">
+                        <use xlink:href="img/sprite_auto.svg#icon-facebook"></use>
+                      </svg>
+                      <span>Facebook</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="social__link" href="#">
+                      <svg width="15" height="15">
+                        <use xlink:href="img/sprite_auto.svg#icon-instagram"></use>
+                      </svg>
+                      <span>Instagram</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="social__link" href="#">
+                      <svg width="15" height="15">
+                        <use xlink:href="img/sprite_auto.svg#icon-pinterest"></use>
+                      </svg>
+                      <span>Pinterest</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="social__link social__link--twitter" href="#">
+                      <svg width="15" height="13">
+                        <use xlink:href="img/sprite_auto.svg#icon-twitter"></use>
+                      </svg>
+                      <span>Twitter</span>
+                    </a>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
