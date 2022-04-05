@@ -1,64 +1,29 @@
-.new-product {
-  padding: 65px 0;
-  text-align: center;
-}
-
-.new-product h2 {
-  margin: 0;
-  margin-bottom: 35px;
-  font-family: $ff-cormorant-garamond;
-  font-weight: 700;
-  font-size: 34px;
-  line-height: 44px;
-  letter-spacing: 0.03em;
-}
-
-.new-product__link {
-  display: block;
-  margin-bottom: 70px;
-  color: $color-wood-bark;
-  position: relative;
-
-  &::before {
-    position: absolute;
-    content: '';
-    width: 80px;
-    height: 1px;
-    background-color: $color-medium-wood;
-    bottom: 0;
-  }
-
-  @media (hover: hover), screen and (min-width: 0\0) {
-    &:hover {
-      &::before {
-        background-color: $color-default-white;
-      }
-    }
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-}
-
-.new-product__slider {
-  position: relative;
-}
-
 .slider {
   overflow: hidden;
   margin-bottom: 50px;
+
+  @include vp-1023 {
+    margin-bottom: 38px;
+  }
 }
 
 .slider__button {
   position: absolute;
-  top: -90px;
+  top: -114px;
   width: 50px;
   height: 30px;
   cursor: pointer;
 
+  @include vp-1023 {
+    top: -104px;
+  }
+
   &--next {
-    right: 0;
+    right: -12px;
+
+    @include vp-1023 {
+      right: -10px;
+    }
 
     &::before {
       position: absolute;
@@ -66,38 +31,63 @@
       width: 30px;
       height: 11px;
       background: url("../img/svg/arrow-right.svg");
-      right: 0;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+
+      @include vp-1023 {
+        width: 37px;
+        height: 17px;
+        background: url("../img/svg/arrow-right-tablet.svg");
+      }
     }
   }
 
   &--prev {
+    left: -12px;
+
+    @include vp-1023 {
+      left: -8px;
+    }
+
     &::before {
       position: absolute;
       content: '';
       width: 30px;
       height: 11px;
       background: url("../img/svg/arrow-left.svg");
-      left: 0;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      @include vp-1023 {
+        width: 37px;
+        height: 17px;
+        background: url("../img/svg/arrow-left-tablet.svg");
+      }
     }
   }
 }
 
 .swiper-pagination {
   width: 48px;
-  height: 12px;
+  height: 20px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  cursor: pointer;
   color: $color-zorba;
   font-weight: 500;
+
+  .swiper-pagination-bullet {
+    cursor: pointer;
+  }
 
   .swiper-pagination-bullet-active {
     color: $color-wood-bark;
   }
 
   @include vp-1023 {
-    width: 118px;
+    width: 120px;
   }
 }
 
@@ -107,4 +97,27 @@
 
 .slide__link img {
   margin: 0 auto;
+  margin-bottom: 20px;
+  width: 270px;
+  height: 284px;
+
+  @include vp-1023 {
+    width: 324px;
+    height: 340px;
+  }
+}
+
+.slide__link p {
+  margin: 0;
+
+  @include vp-1023 {
+    margin-bottom: 2px;
+  }
+}
+
+.slide__link b {
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
 }

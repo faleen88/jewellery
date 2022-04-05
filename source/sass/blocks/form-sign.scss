@@ -16,17 +16,17 @@
 
 .form-sign h3 {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   font-family: $ff-cormorant-garamond;
   font-weight: 700;
   font-size: 34px;
   line-height: 44px;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
 }
 
 .form-sign p {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 33px;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -58,6 +58,7 @@
 }
 
 .form-sign__button {
+  margin-right: -8px;
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
@@ -75,4 +76,8 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.form-sign__button span {
+  padding-right: 9px;
 }

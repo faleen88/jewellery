@@ -6,7 +6,7 @@
 .main-footer__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 99px 0;
+  padding: 89px 0 75px;
 
   @include vp-1023 {
     grid-template-columns: 1fr;

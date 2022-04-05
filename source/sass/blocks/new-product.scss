@@ -1,15 +1,16 @@
-.blog {
-  padding: 50px 0;
+.new-product {
+  padding: 65px 0;
   text-align: center;
 
   @include vp-1023 {
-    padding: 27px 0;
+    padding: 40px 0;
   }
 }
 
-.blog h2 {
+.new-product h2 {
   margin: 0;
-  margin-bottom: 19px;
+  margin-bottom: 22px;
+  padding: 0 100px;
   font-family: $ff-cormorant-garamond;
   font-weight: 700;
   font-size: 34px;
@@ -17,23 +18,31 @@
   letter-spacing: 0.03em;
 
   @include vp-1023 {
-    margin-bottom: 17px;
+    margin-bottom: 18px;
   }
 }
 
-.blog__link {
+.new-product__link {
   display: block;
-  margin-bottom: 64px;
+  margin-bottom: 58px;
   color: $color-wood-bark;
   position: relative;
 
+  @include vp-1023 {
+    margin-bottom: 52px;
+  }
+
   &::before {
     position: absolute;
-    content: "";
-    width: 64px;
+    content: '';
+    width: 80px;
     height: 1px;
     background-color: $color-medium-wood;
-    bottom: -3px;
+    bottom: 1px;
+
+    @include vp-1023 {
+      bottom: -3px;
+    }
   }
 
   @media (hover: hover), screen and (min-width: 0\0) {
@@ -49,18 +58,6 @@
   }
 }
 
-.blog__list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-
-  @include vp-1023 {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 50px;
-  }
-
-  @include vp-767 {
-    gap: 40px;
-  }
+.new-product__slider {
+  position: relative;
 }

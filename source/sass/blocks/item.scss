@@ -34,14 +34,15 @@
   background-color: $color-desert-storm;
   width: 100%;
   min-height: 300px;
-  padding: 61px;
+  padding: 66px 61px;
 
   @include vp-1279 {
-    padding: 61px 3%;
+    padding: 66px 3%;
   }
 
   @include vp-1023 {
     width: 100%;
+    padding: 66px 83px;
   }
 
   @include vp-767 {
@@ -52,13 +53,16 @@
 
 .item__description p {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
   color: $color-zorba;
 }
 
 .item__description h3 {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   font-family: $ff-cormorant-garamond;
   font-weight: 600;
   font-size: 26px;
@@ -84,6 +88,7 @@
     @include vp-1023 {
       position: static;
       width: 100%;
+      padding-top: 84px;
     }
   }
 
@@ -117,7 +122,7 @@
     width: 97px;
     height: 1px;
     background-color: $color-medium-wood;
-    bottom: 0;
+    bottom: -4px;
   }
 
   @media (hover: hover), screen and (min-width: 0\0) {

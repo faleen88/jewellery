@@ -4,13 +4,12 @@
   padding: 0 15px;
 
   @include vp-1279 {
-    width: 96%;
-    padding: 0 2%;
+    width: 100%;
+    padding: 0 25px;
   }
 
   @include vp-1023 {
-    width: 95%;
-    padding: 0 2.5%;
+    padding: 0 45px;
   }
 
   @include vp-767 {

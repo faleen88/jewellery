@@ -1,12 +1,12 @@
 .gallery {
-  padding-top: 30px;
-  padding-bottom: 131px;
+  padding-top: 40px;
+  padding-bottom: 129px;
   text-align: center;
 }
 
 .gallery h2 {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   font-family: $ff-cormorant-garamond;
   font-weight: 700;
   font-size: 34px;
@@ -16,7 +16,7 @@
 
 .gallery__link {
   display: block;
-  margin-bottom: 70px;
+  margin-bottom: 64px;
   color: $color-wood-bark;
   position: relative;
 
@@ -26,7 +26,7 @@
     width: 74px;
     height: 1px;
     background-color: $color-medium-wood;
-    bottom: 0;
+    bottom: -3px;
   }
 
   @media (hover: hover), screen and (min-width: 0\0) {

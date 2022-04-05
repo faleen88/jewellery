@@ -1,11 +1,14 @@
 .nav {
+  padding-top: 30px;
   text-align: center;
 }
 
 .nav__main-nav {
+  padding-bottom: 12px;
   border-bottom: 1px solid $color-seashell;
 
   @include vp-1023 {
+    padding-bottom: 19px;
     border-bottom: none;
   }
 }
@@ -22,7 +25,7 @@
 }
 
 .nav__logo {
-  padding: 30px 50px 12px;
+  padding: 0 50px;
 }
 
 .nav__toggle {
@@ -30,7 +33,7 @@
   text-align: start;
   cursor: pointer;
   height: 18px;
-  padding-top: 54px;
+  //padding-top: 54px;
   border: none;
   background-color: $color-transparent;
 
@@ -55,12 +58,12 @@
 }
 
 .nav__search {
-  padding-top: 33px;
+  padding: 5px 0 26px;
   text-align: start;
 
   @include vp-1023 {
     padding-top: 23px;
-    margin-bottom: 46px;
+    margin-bottom: 36px;
     order: 10;
     grid-column: 1 / 4;
     width: 100%;
@@ -68,11 +71,11 @@
 }
 
 .nav__user-nav {
-  padding-top: 40px;
+  padding: 12px 0 35px;
 }
 
 .nav__product-nav {
-  padding: 19px 0 18px 11px;
+  padding: 18px 0 19px 11px;
 
   @include vp-1023 {
     padding: 0;

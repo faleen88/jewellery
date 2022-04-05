@@ -7,12 +7,12 @@
 
   &::after {
     position: absolute;
-    content: '';
+    content: "";
     width: 17px;
     height: 10px;
     background: url("../img/svg/arrow-down.svg") no-repeat;
-    top: 2px;
-    right: 0;
+    top: 5px;
+    right: -2px;
 
     @include vp-1023 {
       width: 25px;
