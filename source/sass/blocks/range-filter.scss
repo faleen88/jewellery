@@ -1,0 +1,68 @@
+.range-filter {
+  margin-bottom: -7px;
+}
+
+.range-filter__range-controls {
+  position: relative;
+  margin-top: 23px;
+  margin-bottom: 10px;
+}
+
+.range-filter__scale {
+  width: 200px;
+  height: 1px;
+  background: $color-desert-storm;
+}
+
+.range-filter__bar {
+  position: absolute;
+  left: 65px;
+  width: 90px;
+  height: 1px;
+  background: $color-medium-wood;
+}
+
+.range-filter__toggle {
+  position: absolute;
+  top: -7.5px;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  background-color: $color-medium-wood;
+  border-radius: 50%;
+}
+
+.range-filter__toggle:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.range-filter__toggle--min {
+  left: 50px;
+}
+
+.range-filter__toggle--max {
+  right: 39px;
+}
+
+.range-filter__price-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 42px;
+  width: 151px;
+}
+
+.range-filter__price input {
+  width: 35px;
+  padding: 0;
+  border: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.range-filter__price label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}

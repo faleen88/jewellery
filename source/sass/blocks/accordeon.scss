@@ -12,7 +12,7 @@
     height: 10px;
     background: url("../img/svg/arrow-down.svg") no-repeat;
     top: 5px;
-    right: -2px;
+    right: 0;
 
     @include vp-1023 {
       width: 25px;
@@ -21,7 +21,15 @@
   }
 }
 
+.accordeon__content {
+  display: none;
+}
+
 .accordeon--nojs p {
+  display: block;
+}
+
+.accordeon--nojs .accordeon__content {
   display: block;
 }
 
@@ -32,6 +40,10 @@
 }
 
 .accordeon__item--active p {
+  display: block;
+}
+
+.accordeon__item--active .accordeon__content {
   display: block;
 }
 

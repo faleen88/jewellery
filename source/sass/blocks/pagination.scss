@@ -1,0 +1,34 @@
+.pagination ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 98px;
+  margin-right: 32px;
+
+  @include vp-767 {
+    width: 138px;
+    margin-right: 0;
+  }
+}
+
+.pagination__link {
+  font-weight: 500;
+  line-height: 18px;
+  color: $color-zorba;
+
+  &--active {
+    color: $color-wood-bark;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

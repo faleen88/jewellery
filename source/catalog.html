@@ -38,12 +38,9 @@
                   </svg>
                 </a>
               </div>
-              <div class="nav__user-nav user-nav">
-                <a class="user-nav__link user-nav__link--login" href="#">Login</a>
-                <a class="user-nav__link user-nav__link--cart" href="#">
-                  <svg width="20" height="18">
-                    <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
-                  </svg>
+              <div class="nav__user-nav">
+                <a class="nav__user-link nav__user-link--login" href="#">Login</a>
+                <a class="nav__user-link nav__user-link--cart" href="#">
                   <span>Cart<b>0</b></span>
                 </a>
               </div>
@@ -81,6 +78,195 @@
                 <p>Discover picks of fashion's finest trends in our jewellery catalog</p>
               </div>
             </div>
+        </section>
+
+        <section class="catalog">
+          <div class="container">
+            <div class="catalog__wrapper">
+              <button class="catalog__button">Filter</button>
+              <section class="catalog__filter filter accordeon accordeon--nojs">
+                <div class="filter__form form-filter">
+                  <form action="#" method="get">
+                    <div class="form-filter__list">
+                      <div class="form-filter__item accordeon__item accordeon__item--active" id="product">
+                        <button class="form-filter__button accordeon__button" type="button" data-item="product">Product</button>
+                        <div class="form-filter__fields accordeon__content">
+                          <div class="form-filter__field">
+                            <input class="visually-hidden" type="checkbox" name="necklaces" id="necklaces" checked>
+                            <label for="necklaces">Necklaces</label>
+                          </div>
+                          <div class="form-filter__field">
+                            <input class="visually-hidden" type="checkbox" name="chokers" id="chokers" checked>
+                            <label for="chokers">Chokers</label>
+                          </div>
+                          <div class="form-filter__field">
+                            <input class="visually-hidden" type="checkbox" name="rings" id="rings">
+                            <label for="rings">Rings</label>
+                          </div>
+                          <div class="form-filter__field">
+                            <input class="visually-hidden" type="checkbox" name="earrings" id="earrings" checked>
+                            <label for="earrings">Earrings</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-filter__item accordeon__item" id="material">
+                        <button class="form-filter__button accordeon__button" type="button" data-item="material">Material</button>
+                        <div class="form-filter__fields accordeon__content">
+                          <div class="form-filter__field">
+                            <input class="visually-hidden" type="checkbox" name="gold" id="gold">
+                            <label for="gold">Gold</label>
+                          </div>
+                          <div class="form-filter__field">
+                            <input class="visually-hidden" type="checkbox" name="silver" id="silver">
+                            <label for="silver">Silver</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-filter__item accordeon__item" id="collection">
+                        <button class="form-filter__button accordeon__button" type="button" data-item="collection">Collection</button>
+                        <div class="form-filter__fields accordeon__content">
+                          <div class="form-filter__field">
+                            <input class="visually-hidden" type="checkbox" name="pink-flamingo" id="pink-flamingo">
+                            <label for="pink-flamingo">Pink flamingo</label>
+                          </div>
+                          <div class="form-filter__field">
+                            <input class="visually-hidden" type="checkbox" name="dreams" id="dreams">
+                            <label for="dreams">Dreams</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-filter__item accordeon__item accordeon__item--active" id="price">
+                        <button class="form-filter__button accordeon__button" type="button" data-item="price">Price</button>
+                        <div class="form-filter__range-filter range-filter accordeon__content">
+                          <div class="range-filter__range-controls">
+                            <div class="range-filter__scale">
+                              <div class="range-filter__bar"></div>
+                            </div>
+                            <div class="range-filter__toggle range-filter__toggle--min"></div>
+                            <div class="range-filter__toggle range-filter__toggle--max"></div>
+                          </div>
+                          <div class="range-filter__price-controls">
+                            <div class="range-filter__price range-filter__price--min">
+                              <label for="min-price">$</label>
+                              <input type="number" name="min-price" id="min-price" value="55">
+                            </div>
+                            <div class="range-filter__price range-filter__price--max">
+                              <label for="max-price">$</label>
+                              <input type="number" name="max-price" id="max-price" value="155">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="form-filter__button-submit" type="submit">Apply</button>
+                    <button class="form-filter__button-reset" type="reset">Clear All</button>
+                  </form>
+                </div>
+              </section>
+
+              <section class="catalog__products products">
+                <div class="products__list">
+                  <div class="products__item product">
+                    <a class="products__link" href="#">
+                      <img src="img/catalog/double-pearl-earrings.jpg" alt="">
+                      <p>Double pearl earrings</p>
+                      <b>$ 115</b>
+                    </a>
+                  </div>
+                  <div class="products__item">
+                    <a class="products__link" href="#">
+                      <img src="img/catalog/black-choker-gold-bead.jpg" alt="">
+                      <p>Choker with gold bead</p>
+                      <b>$ 55</b>
+                    </a>
+                  </div>
+                  <div class="products__item">
+                    <a class="products__link" href="#">
+                      <img src="img/catalog/gold-layered-necklace.jpg" alt="">
+                      <p>Gold layered necklace</p>
+                      <b>$ 155</b>
+                    </a>
+                  </div>
+                  <div class="products__item">
+                    <a class="products__link" href="#">
+                      <img src="img/catalog/blue-gemstone-pendant.jpg" alt="">
+                      <p>Blue gemstone pendant</p>
+                      <b>$ 105</b>
+                    </a>
+                  </div>
+                  <div class="products__item">
+                    <a class="products__link" href="#">
+                      <img src="img/catalog/boho-earrings.jpg" alt="">
+                      <p>Boho earrings</p>
+                      <b>$ 75</b>
+                    </a>
+                  </div>
+                  <div class="products__item">
+                    <a class="products__link" href="#">
+                      <img src="img/catalog/bird-necklace.jpg" alt="">
+                      <p>Gold bird necklace</p>
+                      <b>$ 135</b>
+                    </a>
+                  </div>
+                  <div class="products__item">
+                    <a class="products__link" href="#">
+                      <img src="img/catalog/black-leather-choker-necklace.jpg" alt="">
+                      <p>Black leather choker</p>
+                      <b>$ 85</b>
+                    </a>
+                  </div>
+                  <div class="products__item">
+                    <a class="products__link" href="#">
+                      <img src="img/catalog/purple-gemstone-necklace.jpg" alt="">
+                      <p>Necklace with amethyst</p>
+                      <b>$ 145</b>
+                    </a>
+                  </div>
+                  <div class="products__item">
+                    <a class="products__link" href="#">
+                      <img src="img/catalog/elephant-earrings.jpg" alt="">
+                      <p>Elephant earrings</p>
+                      <b>$ 95</b>
+                    </a>
+                  </div>
+                  <div class="products__item">
+                    <a class="products__link" href="#">
+                      <img src="img/catalog/threader-necklace-closeup.jpg" alt="">
+                      <p>Threader necklace</p>
+                      <b>$ 115</b>
+                    </a>
+                  </div>
+                  <div class="products__item">
+                    <a class="products__link" href="#">
+                      <img src="img/catalog/origami-crane-necklace.jpg" alt="">
+                      <p>Origami crane necklace</p>
+                      <b>$ 105</b>
+                    </a>
+                  </div>
+                  <div class="products__item">
+                    <a class="products__link" href="#">
+                      <img src="img/catalog/marble-earrings.jpg" alt="">
+                      <p>Marble earrings</p>
+                      <b>$ 95</b>
+                    </a>
+                  </div>
+                </div>
+                <div class="products__switches">
+                  <button class="products__button products__button--prev">Previous</button>
+                  <div class="products__pagination pagination">
+                    <ul>
+                      <li><a class="pagination__link pagination__link--active">1</a></li>
+                      <li><a class="pagination__link" href="#">2</a></li>
+                      <li><a class="pagination__link" href="#">3</a></li>
+                      <li><a class="pagination__link" href="#">4</a></li>
+                      <li><a class="pagination__link" href="#">5</a></li>
+                    </ul>
+                  </div>
+                  <button class="products__button products__button--next">Next</button>
+                </div>
+              </section>
+            </div>
+          </div>
         </section>
       </main>
 

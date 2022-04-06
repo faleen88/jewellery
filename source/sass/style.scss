@@ -21,7 +21,6 @@
 @import "blocks/nav";
 @import "blocks/search";
 @import "blocks/logo";
-@import "blocks/user-nav";
 @import "blocks/product-nav";
 @import "blocks/company-nav";
 @import "blocks/promo";
@@ -40,7 +39,11 @@
 @import "blocks/company";
 @import "blocks/social";
 @import "blocks/promo-catalog";
-
+@import "blocks/catalog";
+@import "blocks/form-filter";
+@import "blocks/range-filter";
+@import "blocks/products";
+@import "blocks/pagination";
 // ---------------------------------
 
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg

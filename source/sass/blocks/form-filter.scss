@@ -1,0 +1,128 @@
+.form-filter form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-filter__list {
+  margin-bottom: 35px;
+  border: 1px solid $color-medium-wood;
+}
+
+.form-filter__item {
+  padding: 22px 20px;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $color-medium-wood;
+  }
+}
+
+.form-filter__button {
+  width: 100%;
+  text-align: start;
+  background-color: $color-transparent;
+  border: none;
+  line-height: 21px;
+  font-weight: 500;
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.form-filter__fields {
+  margin-top: 19px;
+  padding-left: 13px;
+}
+
+.form-filter__field {
+  &:not(:last-child) {
+    margin-bottom: 6px;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &:focus-within {
+    label::before {
+      border: 2px solid $color-wood-bark;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.form-filter__field label {
+  padding-left: 27px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid $color-medium-wood;
+  }
+}
+
+.form-filter__field input:checked ~ label::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 15px;
+  height: 15px;
+  background-color: $color-medium-wood;
+}
+
+.form-filter__button-submit {
+  min-height: 68px;
+  margin-bottom: 26px;
+  background-color: $color-medium-wood;
+  color: $color-default-white;
+  border: none;
+  font-weight: 500;
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.form-filter__button-reset {
+  min-height: 66px;
+  border: 1px solid $color-medium-wood;
+  background-color: $color-transparent;
+  color: $color-wood-bark;
+  font-weight: 500;
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
