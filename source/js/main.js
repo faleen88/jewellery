@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {initMenu} from './modules/menu';
 import {initAccordeon} from './modules/accordeon';
 import {initSwiper} from './modules/swiper';
+import {initFilter} from './modules/filter';
 
 // ---------------------------------
 
@@ -23,6 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initMenu();
     initAccordeon();
     initSwiper();
+    initFilter();
   });
 });
 
