@@ -15,12 +15,6 @@ const initAccordeon = () => {
           item.classList.remove('accordeon__item--active');
         }
       }
-
-      if (item.classList.contains('questions__wrapper')) {
-        if (item.id !== currentValue) {
-          item.classList.remove('accordeon__item--active');
-        }
-      }
     });
   };
 

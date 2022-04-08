@@ -67,6 +67,10 @@
       }
     }
   }
+
+  @include vp-767 {
+    display: none;
+  }
 }
 
 .slider__pagination {
@@ -89,6 +93,18 @@
   @include vp-1023 {
     width: 120px;
   }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.slider__fraction {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+  }
 }
 
 .slide__link {
@@ -99,11 +115,9 @@
   margin: 0 auto;
   margin-bottom: 20px;
   width: 270px;
-  height: 284px;
 
   @include vp-1023 {
     width: 324px;
-    height: 340px;
   }
 }
 

@@ -176,6 +176,9 @@
                 </div>
               </div>
               <div class="slider__pagination swiper-pagination"></div>
+              <div class="slider__fraction">
+                <span class="slider__current"></span> of <span class="slider__total"></span>
+              </div>
             </div>
           </div>
         </section>
@@ -222,7 +225,7 @@
         <section class="questions">
           <div class="container">
             <h2>Frequently asked questions</h2>
-            <div class="questions__wrapper accordeon accordeon--nojs">
+            <div class="questions__wrapper accordeon accordeon--nojs" data-accordeon="questions">
               <div class="questions__item accordeon__item accordeon__item--active" id="materials">
                 <button class="questions__button accordeon__button" type="button" data-item="materials">What materials are <br>the jewellery made of?</button>
                 <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
@@ -349,7 +352,38 @@
           </div>
         </div>
       </footer>
+
+      <section class="modal">
+        <div class="modal__container">
+          <button class="modal__button-close" type="button"><span class="visually-hidden">Close</span></button>
+          <div class="modal__image">
+            <img src="img/login/bg-login.jpg">
+          </div>
+          <div class="modal__form form-login">
+            <h2>Log In</h2>
+            <form action="https://echo.htmlacademy.ru" method="post" data-form="registration">
+              <div class="form-login__field form-login__field--login">
+                <label class="visually-hidden" for="login">Login</label>
+                <input id="login" type="email" name="login" placeholder="Your E-mail" required>
+              </div>
+              <div class="form-login__field form-login__field--password">
+                <label class="visually-hidden" for="password">Password</label>
+                <input id="password" type="password" name="password" placeholder="Password" required>
+              </div>
+              <a class="form-login__restore-link" href="#">Forgot your password?</a>
+              <button class="form-login__button" type="submit">Log In</button>
+            </form>
+            <div class="modal__registration">
+              <span>Don&prime;t have an account?</span>
+              <a class="modal__registration-link" href="#">Sign up</a>
+            </div>
+          </div>
+        </div>
+        <div class="modal__overlay"></div>
+      </section>
     </div>
+
+    <div class="modal-success visually-hidden">Отправка формы выполнена</div>
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

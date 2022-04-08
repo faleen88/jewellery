@@ -1,0 +1,24 @@
+.modal-success {
+  z-index: 1000;
+  position: fixed;
+  left: 100px;
+  top: 200px;
+  right: 100px;
+  padding: 10px 3px;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  border: 5px solid $color-medium-wood;
+  background-color: $color-desert-storm;
+
+  @include vp-1023 {
+    top: 300px
+  }
+
+  @include vp-767 {
+    top: 350px;
+    left: 10%;
+    right: 10%;
+    font-size: 24px;
+  }
+}
