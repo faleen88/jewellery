@@ -1,9 +1,13 @@
 .promo-catalog {
   margin-bottom: 40px;
-  background: $color-medium-wood url("../../img/catalog/bg-catalog.jpg") no-repeat center / cover;
+  background: $color-medium-wood url("../img/catalog/bg-catalog.jpg") no-repeat center / cover;
   color: $color-default-white;
   font-family: $ff-cormorant-garamond;
   text-align: center;
+
+  @include retina {
+    background-image: url("../img/catalog/bg-catalog@2x.jpg");
+  }
 
   @include vp-1023 {
     margin-bottom: 30px;

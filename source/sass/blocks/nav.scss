@@ -12,7 +12,7 @@
   border-bottom: 1px solid $color-seashell;
 
   @include vp-1023 {
-    padding-bottom: 23px;
+    padding-bottom: 12px;
     border-bottom: none;
   }
 
@@ -83,11 +83,15 @@
   text-align: start;
 
   @include vp-1023 {
-    padding-top: 23px;
-    margin-bottom: 36px;
+    padding: 35px 0;
     order: 10;
     grid-column: 1 / 4;
     width: 100%;
+  }
+
+  @include vp-767 {
+    padding: 25px 0;
+    margin-bottom: 10px;
   }
 }
 
@@ -101,7 +105,7 @@
   }
 }
 
-.nav__user-link  {
+.nav__user-link {
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
@@ -180,6 +184,10 @@
   font-size: 18px;
   line-height: 23px;
   color: $color-default-white;
+
+  @include vp-1023 {
+    margin-bottom: 30px;
+  }
 }
 
 .nav--closed {

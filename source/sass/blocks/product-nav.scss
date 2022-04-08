@@ -2,6 +2,10 @@
   @include vp-1023 {
     margin-bottom: 21px;
   }
+
+  @include vp-767 {
+    margin-bottom: 11px;
+  }
 }
 
 .product-nav ul {

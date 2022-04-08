@@ -1,6 +1,16 @@
 .company {
   padding-top: 5px;
   padding-left: 5px;
+
+  @include vp-1023 {
+    padding-left: 0;
+  }
+}
+
+.company ul {
+  @include vp-767 {
+    margin-bottom: 38px;
+  }
 }
 
 .company__link {

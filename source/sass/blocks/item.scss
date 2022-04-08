@@ -47,7 +47,7 @@
 
   @include vp-767 {
     min-height: 256px;
-    padding: 49px 3%;
+    padding: 46px 3%;
   }
 }
 
@@ -58,6 +58,10 @@
   font-size: 14px;
   line-height: 18px;
   color: $color-zorba;
+
+  @include vp-767 {
+    margin-bottom: 12px;
+  }
 }
 
 .item__description h3 {
@@ -67,6 +71,10 @@
   font-weight: 600;
   font-size: 26px;
   line-height: 34px;
+
+  @include vp-767 {
+    padding: 0 50px;
+  }
 }
 
 .item--special {
@@ -89,6 +97,10 @@
       position: static;
       width: 100%;
       padding-top: 84px;
+    }
+
+    @include vp-767 {
+      padding-top: 64px;
     }
   }
 
@@ -118,7 +130,7 @@
 
   &::before {
     position: absolute;
-    content: '';
+    content: "";
     width: 97px;
     height: 1px;
     background-color: $color-medium-wood;

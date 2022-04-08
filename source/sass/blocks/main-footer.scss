@@ -9,7 +9,13 @@
   padding: 89px 0 75px;
 
   @include vp-1023 {
+    padding: 50px 0 35px;
+    padding-right: 57px;
     grid-template-columns: 1fr;
+  }
+
+  @include vp-767 {
+    padding-right: 0;
   }
 }
 
@@ -21,6 +27,10 @@
     grid-template-columns: 42% 33% 115px;
   }
 
+  @include vp-1023 {
+    grid-template-columns: 41% 32.5% 115px;
+  }
+
   @include vp-767 {
     grid-template-columns: 1fr;
   }
@@ -30,10 +40,6 @@
   list-style: none;
   margin: 0;
   padding: 0;
-
-  @include vp-767 {
-    margin-bottom: 50px;
-  }
 }
 
 .main-footer__lists li {

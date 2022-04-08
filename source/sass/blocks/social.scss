@@ -1,6 +1,10 @@
 .social {
   padding-top: 6px;
   padding-left: 5px;
+
+  @include vp-1023 {
+    padding-left: 0;
+  }
 }
 
 .social ul {
@@ -38,19 +42,43 @@
   svg {
     margin-right: 11px;
 
+    @include vp-1023 {
+      margin-right: 15px;
+    }
+
     @include vp-767 {
       margin-right: 0;
+      height: 21px;
+      width: 20px;
     }
   }
 
   &--facebook svg {
     margin-right: 15px;
     margin-left: 3px;
+
+    @include vp-1023 {
+      margin-right: 18px;
+    }
+
+    @include vp-767 {
+      margin-left: 0;
+      width: 12px;
+    }
   }
 
   &--twitter svg {
     margin-right: 13px;
     margin-left: 1px;
+
+    @include vp-1023 {
+      margin-right: 15px;
+    }
+
+    @include vp-767 {
+      width: 18px;
+      margin-left: 0;
+    }
   }
 }
 
