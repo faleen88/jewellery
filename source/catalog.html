@@ -31,7 +31,8 @@
                     <svg width="14" height="14">
                       <use xlink:href="img/sprite_auto.svg#icon-search"></use>
                     </svg>
-                    <input name="search" placeholder="Type here to search" type="search">
+                    <label class="visually-hidden" for="search">Site search</label>
+                    <input name="search" placeholder="Type here to search" type="search" id="search">
                     <button class="search__button visually-hidden" type="submit"></button>
                   </div>
                 </form>
@@ -335,7 +336,8 @@
               <p>News and updates from CH. No spam, we promise.</p>
               <form action="#" method="get">
                 <div class="form-sign__wrapper">
-                  <input type="text" placeholder="Your E-mail" name="mail" required>
+                  <label class="visually-hidden" for="e-mail">Your E-mail</label>
+                  <input type="text" placeholder="Your E-mail" name="mail" required id="e-mail">
                   <button class="form-sign__button" type="submit">
                     <span>Sign Up</span>
                     <svg width="30" height="11">
