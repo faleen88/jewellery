@@ -1,23 +1,24 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Описание проекта">
-    <title>Jewellery</title>
+    <meta name="description" content="Order jewelry in the official Chjewellery online store! Selection filter by material, price and other parameters. We have a large selection of jewelry. Choose a gift for yourself or your loved ones.">
+    <title>Chjewellery</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/poppins-medium.woff" as="font">
   </head>
   <body class="page__body">
     <div class="wrapper">
 
       <header class="main-header">
 
-        <nav class="main-header__nav nav nav--closed nav--nojs">
-          <!-- nav--closed и nav--opened - классы, переключающие состояния меню -->
+        <nav class="main-header__nav nav is-closed is-nojs" data-navigation>
+          <!-- is-closed и is-opened - классы, переключающие состояния меню -->
           <div class="nav__main-nav">
             <div class="nav__container container">
-              <button class="nav__toggle">
+              <button class="nav__toggle" type="button" data-toggle>
                 <span class="visually-hidden">Открыть меню</span>
               </button>
               <div class="nav__search search">
@@ -39,7 +40,7 @@
                 </a>
               </div>
               <div class="nav__user-nav">
-                <a class="nav__user-link nav__user-link--login" href="#">Login</a>
+                <a class="nav__user-link nav__user-link--login" href="login.html" data-open-modal>Login</a>
                 <a class="nav__user-link nav__user-link--cart" href="#">
                   <span>Cart<b>0</b></span>
                 </a>
@@ -63,7 +64,7 @@
                 <li><a class="company-nav__link" href="#">Contact Us</a></li>
               </ul>
             </div>
-            <a class="nav__link" href="#">Login</a>
+            <a class="nav__link" href="login.html" data-open-modal>Login</a>
           </div>
         </nav>
 
@@ -81,16 +82,18 @@
         </section>
 
         <section class="catalog">
+          <h2 class="visually-hidden">Catalog jewelry Chjewellery</h2>
           <div class="container">
             <div class="catalog__wrapper">
-              <button class="catalog__button">Filter</button>
-              <section class="catalog__filter catalog__filter--closed catalog__filter--nojs accordeon accordeon--nojs">
-                <div class="catalog__form form-filter">
+              <section class="catalog__filter is-closed accordeon is-nojs" data-accordeon="filter">
+                <h3 class="visually-hidden">Jewelry selection filter</h3>
+                <button class="catalog__button" type="button" data-open-filter>Filter</button>
+                <div class="catalog__form form-filter" data-form-filter>
                   <form action="https://echo.htmlacademy.ru" method="get" id="filter">
-                    <button class="form-filter__button-close"></button>
+                    <button class="form-filter__button-close" type="button" data-close-filter></button>
                     <div class="form-filter__list">
-                      <div class="form-filter__item accordeon__item accordeon__item--active" id="product">
-                        <button class="form-filter__button accordeon__button" type="button" data-item="product">Product</button>
+                      <div class="form-filter__item accordeon__item is-active" id="product" data-accordeon-item>
+                        <button class="form-filter__button accordeon__button" type="button" data-button="product">Product</button>
                         <div class="form-filter__fields accordeon__content">
                           <div class="form-filter__field">
                             <input class="visually-hidden" type="checkbox" name="necklaces" id="necklaces" checked>
@@ -110,8 +113,8 @@
                           </div>
                         </div>
                       </div>
-                      <div class="form-filter__item accordeon__item" id="material">
-                        <button class="form-filter__button accordeon__button" type="button" data-item="material">Material</button>
+                      <div class="form-filter__item accordeon__item" id="material" data-accordeon-item>
+                        <button class="form-filter__button accordeon__button" type="button" data-button="material">Material</button>
                         <div class="form-filter__fields accordeon__content">
                           <div class="form-filter__field">
                             <input class="visually-hidden" type="checkbox" name="gold" id="gold">
@@ -123,8 +126,8 @@
                           </div>
                         </div>
                       </div>
-                      <div class="form-filter__item accordeon__item" id="collection">
-                        <button class="form-filter__button accordeon__button" type="button" data-item="collection">Collection</button>
+                      <div class="form-filter__item accordeon__item" id="collection" data-accordeon-item>
+                        <button class="form-filter__button accordeon__button" type="button" data-button="collection">Collection</button>
                         <div class="form-filter__fields accordeon__content">
                           <div class="form-filter__field">
                             <input class="visually-hidden" type="checkbox" name="pink-flamingo" id="pink-flamingo">
@@ -136,8 +139,8 @@
                           </div>
                         </div>
                       </div>
-                      <div class="form-filter__item accordeon__item accordeon__item--active" id="price">
-                        <button class="form-filter__button accordeon__button" type="button" data-item="price">Price</button>
+                      <div class="form-filter__item accordeon__item is-active" id="price" data-accordeon-item>
+                        <button class="form-filter__button accordeon__button" type="button" data-button="price">Price</button>
                         <div class="form-filter__range-filter range-filter accordeon__content">
                           <div class="range-filter__range-controls">
                             <div class="range-filter__scale">
@@ -166,6 +169,7 @@
               </section>
 
               <section class="catalog__products products">
+                <h3 class="visually-hidden">Jewelry list</h3>
                 <div class="products__list">
                   <div class="products__item product">
                     <a class="products__link" href="#">
@@ -301,7 +305,7 @@
                   </div>
                 </div>
                 <div class="products__switches">
-                  <button class="products__button products__button--prev">Previous</button>
+                  <button class="products__button products__button--prev" type="button">Previous</button>
                   <div class="products__pagination pagination">
                     <ul>
                       <li><a class="pagination__link pagination__link--active">1</a></li>
@@ -311,7 +315,7 @@
                       <li><a class="pagination__link" href="#">5</a></li>
                     </ul>
                   </div>
-                  <button class="products__button products__button--next">Next</button>
+                  <button class="products__button products__button--next" type="button">Next</button>
                 </div>
               </section>
             </div>
@@ -339,6 +343,7 @@
             </section>
             <div class="main-footer__lists">
               <section class="main-footer__information information">
+                <h3 class="visually-hidden">Information help</h3>
                 <ul>
                   <li><a class="information__link" href="#">Ordering & Payment</a></li>
                   <li><a class="information__link" href="#">Terms & Conditions</a></li>
@@ -347,6 +352,7 @@
                 </ul>
               </section>
               <section class="main-footer__company company">
+                <h3 class="visually-hidden">About company</h3>
                 <ul>
                   <li><a class="company__link" href="#">About CH</a></li>
                   <li><a class="company__link" href="#">Stores & Hours</a></li>
@@ -355,6 +361,7 @@
                 </ul>
               </section>
               <section class="main-footer__social social">
+                <h3 class="visually-hidden">Connection with us</h3>
                 <ul>
                   <li>
                     <a class="social__link social__link--facebook" href="#">
@@ -395,11 +402,15 @@
         </div>
       </footer>
 
-      <section class="modal">
+      <section class="modal" data-modal="login">
         <div class="modal__container">
-          <button class="modal__button-close" type="button"><span class="visually-hidden">Close</span></button>
+          <button class="modal__button-close" type="button" data-close-modal><span class="visually-hidden">Close</span></button>
           <div class="modal__image">
-            <img src="img/login/bg-login.jpg">
+            <picture>
+              <source type="image/webp" srcset="img/login/bg-login.webp 1x, img/login/bg-login@2x.webp 2x">
+              <!-- 1х: 430px x 138px; 2x: 860px x 176px -->
+              <img src="img/login/bg-login.jpg" srcset="img/login/bg-login@2x.jpg 2x" alt="Earrings">
+            </picture>
           </div>
           <div class="modal__form form-login">
             <h2>Log In</h2>
@@ -421,11 +432,11 @@
             </div>
           </div>
         </div>
-        <div class="modal__overlay"></div>
+        <div class="modal__overlay" data-modal="overlay"></div>
       </section>
     </div>
 
-    <div class="modal-success visually-hidden">Отправка формы выполнена</div>
+    <div class="modal-success visually-hidden" data-modal="success">Отправка формы выполнена</div>
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

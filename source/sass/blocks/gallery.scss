@@ -34,7 +34,7 @@
 }
 
 .gallery__link {
-  display: block;
+  display: inline-flex;
   margin-bottom: 64px;
   color: $color-wood-bark;
   position: relative;
@@ -46,7 +46,7 @@
   &::before {
     position: absolute;
     content: "";
-    width: 74px;
+    width: 100%;
     height: 1px;
     background-color: $color-medium-wood;
     bottom: -3px;

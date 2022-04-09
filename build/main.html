@@ -1,23 +1,24 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Описание проекта">
-    <title>Jewellery</title>
+    <meta name="description" content="Order jewelry in the official Chjewellery online store! Selection filter by material, price and other parameters. We have a large selection of jewelry. Choose a gift for yourself or your loved ones.">
+    <title>Chjewellery</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/poppins-medium.woff" as="font">
   </head>
   <body class="page__body">
     <div class="wrapper">
 
       <header class="main-header">
 
-        <nav class="main-header__nav nav nav--closed nav--nojs">
-          <!-- nav--closed и nav--opened - классы, переключающие состояния меню -->
+        <nav class="main-header__nav nav is-closed is-nojs" data-navigation>
+          <!-- is-closed и is-opened - классы, переключающие состояния меню -->
           <div class="nav__main-nav">
             <div class="nav__container container">
-              <button class="nav__toggle">
+              <button class="nav__toggle" type="button" data-toggle>
                 <span class="visually-hidden">Открыть меню</span>
               </button>
               <div class="nav__search search">
@@ -39,7 +40,7 @@
                 </a>
               </div>
               <div class="nav__user-nav">
-                <a class="nav__user-link nav__user-link--login" href="#">Login</a>
+                <a class="nav__user-link nav__user-link--login" href="login.html" data-open-modal>Login</a>
                 <a class="nav__user-link nav__user-link--cart" href="#">
                   <span>Cart<b>0</b></span>
                 </a>
@@ -63,7 +64,7 @@
                 <li><a class="company-nav__link" href="#">Contact Us</a></li>
               </ul>
             </div>
-            <a class="nav__link" href="#">Login</a>
+            <a class="nav__link" href="login.html" data-open-modal>Login</a>
           </div>
         </nav>
 
@@ -83,11 +84,11 @@
         <section class="new-product">
           <div class="container">
             <h2>New In</h2>
-            <a class="new-product__link" href="#">Shop Now</a>
+            <a class="new-product__link" href="catalog.html">Shop Now</a>
             <div class="new-product__slider">
-              <div class="slider__button slider__button--prev swiper-button-prev"></div>
-              <div class="slider__button slider__button--next swiper-button-next"></div>
-              <div class="slider swiper-container">
+              <div class="new-product__slider-button new-product__slider-button--prev swiper-button-prev" data-button-prev></div>
+              <div class="new-product__slider-button new-product__slider-button--next swiper-button-next" data-button-next></div>
+              <div class="slider swiper-container" data-slider>
                 <div class="swiper-wrapper">
                   <div class="slider__item swiper-slide">
                     <a class="slider__link" href="#">
@@ -197,11 +198,22 @@
                       <b>$ 95</b>
                     </a>
                   </div>
+                  <div class="slider__item swiper-slide">
+                    <a class="slider__link" href="#">
+                      <picture>
+                        <source type="image/webp" srcset="img/main/new/galaxy-earrings.webp 1x, img/main/new/galaxy-earrings@2x.webp 2x">
+                        <!-- 1х: 270px x 284px; 2x: 540px x 568px -->
+                        <img src="img/main/new/galaxy-earrings.jpg" srcset="img/main/new/galaxy-earrings@2x.jpg 2x" alt="Galaxy earrings">
+                      </picture>
+                      <p>Galaxy earrings</p>
+                      <b>$ 95</b>
+                    </a>
+                  </div>
                 </div>
               </div>
-              <div class="slider__pagination swiper-pagination"></div>
-              <div class="slider__fraction">
-                <span class="slider__current"></span>&ensp;of&ensp;<span class="slider__total"></span>
+              <div class="new-product__slider-pagination swiper-pagination" data-pagination></div>
+              <div class="new-product__slider-fraction">
+                <span data-slides-current></span>&ensp;of&ensp;<span data-slides-total></span>
               </div>
             </div>
           </div>
@@ -261,21 +273,21 @@
         <section class="questions">
           <div class="container">
             <h2>Frequently asked questions</h2>
-            <div class="questions__wrapper accordeon accordeon--nojs" data-accordeon="questions">
-              <div class="questions__item accordeon__item accordeon__item--active" id="materials">
-                <button class="questions__button accordeon__button" type="button" data-item="materials">What materials are <br>the jewellery made of?</button>
+            <div class="questions__wrapper accordeon is-nojs" data-accordeon="questions">
+              <div class="questions__item accordeon__item is-active" id="materials" data-accordeon-item>
+                <button class="questions__button accordeon__button" type="button" data-button="materials">What materials are <br>the jewellery made of?</button>
                 <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
               </div>
-              <div class="questions__item accordeon__item" id="delivery">
-                <button class="questions__button accordeon__button" type="button" data-item="delivery">Which countries <br>do you deliver to?</button>
+              <div class="questions__item accordeon__item" id="delivery" data-accordeon-item>
+                <button class="questions__button accordeon__button" type="button" data-button="delivery">Which countries <br>do you deliver to?</button>
                 <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
               </div>
-              <div class="questions__item accordeon__item" id="payment">
-                <button class="questions__button accordeon__button" type="button" data-item="payment">What are the <br>payment methods?</button>
+              <div class="questions__item accordeon__item" id="payment" data-accordeon-item>
+                <button class="questions__button accordeon__button" type="button" data-button="payment">What are the <br>payment methods?</button>
                 <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
               </div>
-              <div class="questions__item accordeon__item" id="return">
-                <button class="questions__button accordeon__button" type="button" data-item="return">Can I return the <br>jewellery if it didn&prime;t fit me?</button>
+              <div class="questions__item accordeon__item" id="return" data-accordeon-item>
+                <button class="questions__button accordeon__button" type="button" data-button="return">Can I return the <br>jewellery if it didn&prime;t fit me?</button>
                 <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
               </div>
             </div>
@@ -361,6 +373,7 @@
             </section>
             <div class="main-footer__lists">
               <section class="main-footer__information information">
+                <h3 class="visually-hidden">Information help</h3>
                 <ul>
                   <li><a class="information__link" href="#">Ordering & Payment</a></li>
                   <li><a class="information__link" href="#">Terms & Conditions</a></li>
@@ -369,6 +382,7 @@
                 </ul>
               </section>
               <section class="main-footer__company company">
+                <h3 class="visually-hidden">About company</h3>
                 <ul>
                   <li><a class="company__link" href="#">About CH</a></li>
                   <li><a class="company__link" href="#">Stores & Hours</a></li>
@@ -377,6 +391,7 @@
                 </ul>
               </section>
               <section class="main-footer__social social">
+                <h3 class="visually-hidden">Connection with us</h3>
                 <ul>
                   <li>
                     <a class="social__link social__link--facebook" href="#">
@@ -417,9 +432,9 @@
         </div>
       </footer>
 
-      <section class="modal">
+      <section class="modal" data-modal="login">
         <div class="modal__container">
-          <button class="modal__button-close" type="button"><span class="visually-hidden">Close</span></button>
+          <button class="modal__button-close" type="button" data-close-modal><span class="visually-hidden">Close</span></button>
           <div class="modal__image">
             <picture>
               <source type="image/webp" srcset="img/login/bg-login.webp 1x, img/login/bg-login@2x.webp 2x">
@@ -447,11 +462,11 @@
             </div>
           </div>
         </div>
-        <div class="modal__overlay"></div>
+        <div class="modal__overlay" data-modal="overlay"></div>
       </section>
     </div>
 
-    <div class="modal-success visually-hidden">Отправка формы выполнена</div>
+    <div class="modal-success visually-hidden" data-modal="success">Отправка формы выполнена</div>
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

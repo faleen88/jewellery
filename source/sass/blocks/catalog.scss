@@ -26,6 +26,7 @@
 
 .catalog__button {
   display: none;
+  width: 100%;
   min-height: 68px;
   margin-bottom: 2px;
   background-color: $color-medium-wood;
@@ -53,7 +54,7 @@
   }
 }
 
-.catalog__filter--closed {
+.is-closed {
   @include vp-1023 {
     .catalog__form {
       display: none;
@@ -65,7 +66,7 @@
   }
 }
 
-.catalog__filter--opened {
+.is-opened {
   @include vp-1023 {
     .catalog__form {
       display: block;
@@ -73,7 +74,7 @@
   }
 }
 
-.catalog__filter--nojs {
+.is-nojs {
   @include vp-1023 {
     .catalog__form {
       display: block;

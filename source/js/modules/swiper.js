@@ -1,43 +1,45 @@
 const initSwiper = () => {
-  /* eslint-disable */
-  const swiper = new Swiper('.slider', {
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    pagination: {
-      el: '.slider__pagination',
-      tupe: 'bullets',
-      clickable: true,
-      renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + (index + 1) +'</span>';
+  if (document.querySelector('[data-slider]')) {
+    const renderPagination = (index, className) => '<span class="' + className + '">' + (index + 1) + '</span>';
+
+    // eslint-disable-next-line no-undef
+    const swiper = new Swiper('[data-slider]', {
+      navigation: {
+        nextEl: '[data-button-next]',
+        prevEl: '[data-button-prev]',
       },
-    },
-    slidesPerView: 2,
-    spaceBetween: 30,
-    slidesPerGroup: 2,
-    breakpoints: {
-      1024: {
-        slidesPerView: 4,
-        slidesPerGroup: 4,
-        touchRatio: 0,
+      pagination: {
+        el: '[data-pagination]',
+        tupe: 'bullets',
+        clickable: true,
+        renderBullet: renderPagination,
       },
-    },
-  });
+      slidesPerView: 2,
+      spaceBetween: 30,
+      slidesPerGroup: 2,
+      breakpoints: {
+        1024: {
+          slidesPerView: 4,
+          slidesPerGroup: 4,
+          touchRatio: 0,
+        },
+      },
+    });
 
-  const SLIDES_VIEW_MOBILE = 2;
+    const SLIDES_VIEW_MOBILE = 2;
 
-  let allSlides = document.querySelector('.slider__total')
-  let currentSlides = document.querySelector('.slider__current')
+    let allSlides = document.querySelector('[data-slides-total]');
+    let currentSlides = document.querySelector('[data-slides-current]');
 
-  allSlides.textContent = swiper.slides.length / SLIDES_VIEW_MOBILE;
-  currentSlides.textContent = ++swiper.realIndex;
+    allSlides.textContent = Math.ceil(swiper.slides.length / SLIDES_VIEW_MOBILE);
+    currentSlides.textContent = ++swiper.realIndex;
 
-  swiper.on('slideChange', function () {
-    let currentSlide = swiper.realIndex + SLIDES_VIEW_MOBILE;
-    currentSlides.textContent = currentSlide / SLIDES_VIEW_MOBILE;
+    swiper.on('slideChange', function () {
+      let currentSlide = swiper.realIndex + SLIDES_VIEW_MOBILE;
+      currentSlides.textContent = Math.ceil(currentSlide / SLIDES_VIEW_MOBILE);
 
-  });
+    });
+  }
 };
 
 export {initSwiper};

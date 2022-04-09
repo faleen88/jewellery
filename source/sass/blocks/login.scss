@@ -1,0 +1,60 @@
+.login {
+  background-color: $color-desert-storm;
+}
+
+.login__image {
+  width: 100%;
+}
+
+.login__image img {
+  width: 100%;
+  max-height: 260px;
+  object-fit: cover;
+}
+
+.login__form {
+  padding: 100px 200px;
+
+  @include vp-1023 {
+    padding: 100px 100px;
+  }
+
+  @include vp-767 {
+    padding: 50px 0;
+  }
+}
+
+.login__registration {
+  width: 229px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  @include vp-1023 {
+    width: 224px;
+  }
+}
+
+.login__registration span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-zorba;
+}
+
+.login__registration-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-wood-bark;
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

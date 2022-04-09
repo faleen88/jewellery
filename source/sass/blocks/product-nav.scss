@@ -11,6 +11,7 @@
 .product-nav ul {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 
   @include vp-1023 {
     flex-direction: column;

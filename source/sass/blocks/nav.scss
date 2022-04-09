@@ -12,7 +12,7 @@
   border-bottom: 1px solid $color-seashell;
 
   @include vp-1023 {
-    padding-bottom: 12px;
+    padding-bottom: 22px;
     border-bottom: none;
   }
 
@@ -24,6 +24,10 @@
 .nav__container {
   display: grid;
   grid-template-columns: 1fr 166px 1fr;
+
+  &--login {
+    grid-template-columns: 1fr;
+  }
 }
 
 .nav ul {
@@ -96,9 +100,10 @@
 }
 
 .nav__user-nav {
-  padding: 12px 0 35px;
+  padding: 12px 0 25px;
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap;
 
   @include vp-1023 {
     padding: 0;
@@ -111,6 +116,7 @@
   font-weight: 500;
   margin-left: 35px;
   color: $color-wood-bark;
+  padding-bottom: 10px;
 
   &--login {
     @include vp-1023 {
@@ -186,11 +192,21 @@
   color: $color-default-white;
 
   @include vp-1023 {
-    margin-bottom: 30px;
+    padding-bottom: 30px;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
-.nav--closed {
+.is-closed {
   .nav__search {
     @include vp-1023 {
       display: none;
@@ -218,7 +234,7 @@
   }
 }
 
-.nav--opened {
+.is-opened {
   @include vp-1023 {
     position: fixed;
     top: 0;
@@ -279,9 +295,15 @@
   }
 }
 
-.nav--nojs {
+.is-nojs {
   @include vp-1023 {
     background-color: $color-medium-wood;
+  }
+
+  .nav__toggle {
+    @include vp-1023 {
+      display: none;
+    }
   }
 
   .nav__logo {
@@ -299,6 +321,14 @@
   .nav__search {
     @include vp-1023 {
       display: block;
+    }
+  }
+
+  .nav__user-link--cart {
+    @include vp-1023 {
+      &::before {
+        background: url("../img/svg/cart-mobile-menu.svg");
+      }
     }
   }
 

@@ -25,29 +25,29 @@
   display: none;
 }
 
-.accordeon--nojs p {
+.is-nojs p {
   display: block;
 }
 
-.accordeon--nojs .accordeon__content {
+.is-nojs .accordeon__content {
   display: block;
 }
 
-.accordeon--nojs .accordeon__button {
+.is-nojs .accordeon__button {
   &::after {
     display: none;
   }
 }
 
-.accordeon__item--active p {
+.is-active p {
   display: block;
 }
 
-.accordeon__item--active .accordeon__content {
+.is-active .accordeon__content {
   display: block;
 }
 
-.accordeon__item--active .accordeon__button {
+.is-active .accordeon__button {
   &::after {
     background: url("../img/svg/arrow-up.svg");
   }

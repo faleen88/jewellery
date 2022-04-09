@@ -1,35 +1,34 @@
 const initFilter = () => {
-  if (document.querySelector('.catalog__filter')) {
+  if (document.querySelector('[data-accordeon="filter"]')) {
     const siteBody = document.querySelector('.page__body');
-    const filter = document.querySelector('.catalog__filter');
-    const buttonFilterOpen = document.querySelector('.catalog__button');
-    const formFilter = filter.querySelector('.form-filter');
-    const buttonFilterClose = document.querySelector('.form-filter__button-close');
+    const filter = document.querySelector('[data-accordeon="filter"]');
+    const buttonFilterOpen = document.querySelector('[data-open-filter]');
+    const formFilter = filter.querySelector('[data-form-filter]');
+    const buttonFilterClose = document.querySelector('[data-close-filter]');
     const form = filter.querySelector('#filter');
 
-    filter.classList.remove('catalog__filter--nojs');
-    formFilter.classList.add('form-filter--mobile');
+    filter.classList.remove('is-nojs');
+    formFilter.classList.add('is-mobile');
 
     const closeFilter = function () {
-      filter.classList.remove('catalog__filter--opened');
-      filter.classList.add('catalog__filter--closed');
+      filter.classList.remove('is-opened');
+      filter.classList.add('is-closed');
       siteBody.classList.remove('overflow-hidden');
       buttonFilterClose.removeEventListener('click', closeFilter);
     };
 
     const openFilter = function () {
-      filter.classList.remove('catalog__filter--closed');
-      filter.classList.add('catalog__filter--opened');
+      filter.classList.remove('is-closed');
+      filter.classList.add('is-opened');
       siteBody.classList.add('overflow-hidden');
     };
 
     buttonFilterOpen.addEventListener('click', function () {
-      if (filter.classList.contains('catalog__filter--closed')) {
+      if (filter.classList.contains('is-closed')) {
         openFilter();
+        buttonFilterClose.addEventListener('click', closeFilter);
       }
     });
-
-    buttonFilterClose.addEventListener('click', closeFilter);
 
     form.addEventListener('submit', function (evt) {
       evt.preventDefault();

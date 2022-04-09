@@ -167,7 +167,7 @@
   }
 }
 
-.form-filter--mobile {
+.is-mobile {
   @include vp-1023 {
     position: fixed;
     top: 0;

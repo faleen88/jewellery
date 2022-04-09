@@ -31,7 +31,7 @@
 }
 
 .new-product__link {
-  display: block;
+  display: inline-flex;
   margin-bottom: 58px;
   color: $color-wood-bark;
   position: relative;
@@ -47,7 +47,7 @@
   &::before {
     position: absolute;
     content: "";
-    width: 80px;
+    width: 100%;
     height: 1px;
     background-color: $color-medium-wood;
     bottom: 1px;
@@ -72,4 +72,109 @@
 
 .new-product__slider {
   position: relative;
+}
+
+.new-product__slider-button {
+  position: absolute;
+  top: -114px;
+  width: 50px;
+  height: 30px;
+  cursor: pointer;
+
+  @include vp-1023 {
+    top: -104px;
+  }
+
+  &--next {
+    right: -12px;
+
+    @include vp-1023 {
+      right: -10px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 11px;
+      background: url("../img/svg/arrow-right.svg");
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+
+      @include vp-1023 {
+        width: 37px;
+        height: 17px;
+        background: url("../img/svg/arrow-right-tablet.svg");
+      }
+    }
+  }
+
+  &--prev {
+    left: -12px;
+
+    @include vp-1023 {
+      left: -8px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 11px;
+      background: url("../img/svg/arrow-left.svg");
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      @include vp-1023 {
+        width: 37px;
+        height: 17px;
+        background: url("../img/svg/arrow-left-tablet.svg");
+      }
+    }
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.swiper-button-disabled {
+  opacity: 0.3;
+}
+
+.new-product__slider-pagination {
+  width: 48px;
+  height: 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  color: $color-zorba;
+  font-weight: 500;
+
+  .swiper-pagination-bullet {
+    cursor: pointer;
+  }
+
+  .swiper-pagination-bullet-active {
+    color: $color-wood-bark;
+  }
+
+  @include vp-1023 {
+    width: 120px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.new-product__slider-fraction {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+    font-weight: 500;
+  }
 }
