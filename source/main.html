@@ -10,7 +10,7 @@
     <link rel="icon" href="favicon/favicon.ico">
     <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicon/180.png">
-    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="manifest" href="favicon/manifest.webmanifest">
     <link rel="preload" href="fonts/poppins-medium.woff" as="font">
   </head>
   <body class="page__body">
@@ -37,7 +37,7 @@
                   </div>
                 </form>
               </div>
-              <div class="nav__logo logo">
+              <div class="nav__logo logo logo--active">
                 <a class="logo__link" tabindex="1">
                   <svg width="66" height="66">
                     <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
@@ -46,14 +46,14 @@
               </div>
               <div class="nav__user-nav">
                 <a class="nav__user-link nav__user-link--login" href="login.html" data-open-modal>Login</a>
-                <a class="nav__user-link nav__user-link--cart" href="#">
+                <a class="nav__user-link nav__user-link--cart" href="#" aria-label="viewcart">
                   <span>Cart<b>0</b></span>
                 </a>
               </div>
             </div>
           </div>
           <div class="container">
-            <div class="nav__product-nav product-nav product-nav">
+            <div class="nav__product-nav product-nav">
               <ul>
                 <li><a class="product-nav__link" href="#">What&prime;s new</a>
                 <li><a class="product-nav__link" href="#">Chokers</a></li>
@@ -280,19 +280,19 @@
             <h2>Frequently asked questions</h2>
             <div class="questions__wrapper accordeon is-nojs" data-accordeon="questions">
               <div class="questions__item accordeon__item is-active" id="materials" data-accordeon-item>
-                <button class="questions__button accordeon__button" type="button" data-button="materials">What materials are <br>the jewellery made of?</button>
+                <button class="questions__button accordeon__button" type="button" data-button="materials"><span data-button="materials">What materials are <br>the jewellery made of?</span></button>
                 <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
               </div>
               <div class="questions__item accordeon__item" id="delivery" data-accordeon-item>
-                <button class="questions__button accordeon__button" type="button" data-button="delivery">Which countries <br>do you deliver to?</button>
+                <button class="questions__button accordeon__button" type="button" data-button="delivery"><span data-button="delivery">Which countries <br>do you deliver to?</span></button>
                 <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
               </div>
               <div class="questions__item accordeon__item" id="payment" data-accordeon-item>
-                <button class="questions__button accordeon__button" type="button" data-button="payment">What are the <br>payment methods?</button>
+                <button class="questions__button accordeon__button" type="button" data-button="payment"><span data-button="payment">What are the <br>payment methods?</span></button>
                 <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
               </div>
               <div class="questions__item accordeon__item" id="return" data-accordeon-item>
-                <button class="questions__button accordeon__button" type="button" data-button="return">Can I return the <br>jewellery if it didn&prime;t fit me?</button>
+                <button class="questions__button accordeon__button" type="button" data-button="return"><span data-button="return">Can I return the <br>jewellery if it didn&prime;t fit me?</span></button>
                 <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
               </div>
             </div>
@@ -367,7 +367,7 @@
               <form action="#" method="get">
                 <div class="form-sign__wrapper">
                   <label class="visually-hidden" for="e-mail">Your E-mail</label>
-                  <input type="text" placeholder="Your E-mail" name="mail" required id="e-mail">
+                  <input type="email" placeholder="Your E-mail" name="mail" required id="e-mail">
                   <button class="form-sign__button" type="submit">
                     <span>Sign Up</span>
                     <svg width="30" height="11">
@@ -400,7 +400,7 @@
                 <h3 class="visually-hidden">Connection with us</h3>
                 <ul>
                   <li>
-                    <a class="social__link social__link--facebook" href="#">
+                    <a class="social__link social__link--facebook" href="#" aria-label="facebook">
                       <svg width="8" height="15">
                         <use xlink:href="img/sprite_auto.svg#icon-facebook"></use>
                       </svg>
@@ -408,7 +408,7 @@
                     </a>
                   </li>
                   <li>
-                    <a class="social__link" href="#">
+                    <a class="social__link" href="#" aria-label="instagram">
                       <svg width="15" height="15">
                         <use xlink:href="img/sprite_auto.svg#icon-instagram"></use>
                       </svg>
@@ -416,7 +416,7 @@
                     </a>
                   </li>
                   <li>
-                    <a class="social__link" href="#">
+                    <a class="social__link" href="#" aria-label="pinterest">
                       <svg width="15" height="15">
                         <use xlink:href="img/sprite_auto.svg#icon-pinterest"></use>
                       </svg>
@@ -424,7 +424,7 @@
                     </a>
                   </li>
                   <li>
-                    <a class="social__link social__link--twitter" href="#">
+                    <a class="social__link social__link--twitter" href="#" aria-label="twitter">
                       <svg width="15" height="13">
                         <use xlink:href="img/sprite_auto.svg#icon-twitter"></use>
                       </svg>

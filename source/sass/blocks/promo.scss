@@ -7,14 +7,25 @@
 
   @include retina {
     background-image: url("../img/main/bg-main-desktop@2x.jpg");
+
+    @include vp-1023 {
+      background-image: url("../img/main/bg-main-tablet@2x.jpgs");
+    }
+
+    @include vp-767 {
+      background-image: url("../img/main/bg-main-mobile@2x.jpg")
+    }
+
   }
 
   @include vp-1023 {
     margin-bottom: 30px;
+    background-image: url("../img/main/bg-main-tablet.jpg");
   }
 
   @include vp-767 {
     margin-bottom: 29px;
+    background-image: url("../img/main/bg-main-mobile.jpg")
   }
 }
 

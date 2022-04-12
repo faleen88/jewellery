@@ -21,6 +21,7 @@ const initAccordeon = () => {
 
     buttonsAccordeon.forEach(function (button) {
       button.addEventListener('click', function (evt) {
+        evt.stopPropagation();
         getAccordeonContent(evt.target.dataset.button);
       });
 

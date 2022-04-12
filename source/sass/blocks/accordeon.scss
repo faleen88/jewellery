@@ -2,7 +2,7 @@
   display: none;
 }
 
-.accordeon__button {
+.accordeon__button span {
   position: relative;
 
   &::after {
@@ -33,7 +33,7 @@
   display: block;
 }
 
-.is-nojs .accordeon__button {
+.is-nojs span {
   &::after {
     display: none;
   }
@@ -47,7 +47,7 @@
   display: block;
 }
 
-.is-active .accordeon__button {
+.is-active span {
   &::after {
     background: url("../img/svg/arrow-up.svg");
   }

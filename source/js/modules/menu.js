@@ -9,13 +9,13 @@ const initMenu = () => {
     const closeMenu = function () {
       mainNav.classList.remove('is-opened');
       mainNav.classList.add('is-closed');
-      siteBody.classList.remove('overflow-hidden');
+      siteBody.classList.remove('scroll-lock');
     };
 
     const openMenu = function () {
       mainNav.classList.remove('is-closed');
       mainNav.classList.add('is-opened');
-      siteBody.classList.add('overflow-hidden');
+      siteBody.classList.add('scroll-lock');
     };
 
     navToggle.addEventListener('click', function () {

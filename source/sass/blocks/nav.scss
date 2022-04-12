@@ -87,7 +87,7 @@
   text-align: start;
 
   @include vp-1023 {
-    padding: 35px 0;
+    padding: 35px 0 25px;
     order: 10;
     grid-column: 1 / 4;
     width: 100%;

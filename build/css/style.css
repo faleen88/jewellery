@@ -821,6 +821,14 @@ button,
   opacity: 0.5;
 }
 
+.logo--active svg:active {
+  opacity: 1;
+}
+
+.logo--active .logo__link {
+  cursor: auto;
+}
+
 .product-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1395,19 +1403,16 @@ button,
   border: 1px solid #a87b62;
 }
 
-.questions__item {
-  padding: 44px 50px 41px 38px;
-}
-
 .questions__item:not(:last-child) {
   border-bottom: 1px solid #a87b62;
 }
 
 .questions__item p {
   margin: 0;
-  margin-top: 8px;
-  padding-right: 350px;
-  padding-left: 10px;
+  margin-top: -35px;
+  padding-right: 400px;
+  padding-left: 50px;
+  padding-bottom: 45px;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -1415,7 +1420,7 @@ button,
 
 .questions__button {
   width: 100%;
-  padding: 0 4px;
+  padding: 44px 48px 41px 42px;
   text-align: start;
   background-color: rgba(255, 255, 255, 0);
   border: none;
@@ -1429,6 +1434,11 @@ button,
   opacity: 0.3;
 }
 
+.questions__button span {
+  display: block;
+  width: 100%;
+}
+
 .questions__button br {
   display: none;
 }
@@ -1437,11 +1447,11 @@ button,
   display: none;
 }
 
-.accordeon__button {
+.accordeon__button span {
   position: relative;
 }
 
-.accordeon__button::after {
+.accordeon__button span::after {
   position: absolute;
   content: "";
   width: 17px;
@@ -1463,7 +1473,7 @@ button,
   display: block;
 }
 
-.is-nojs .accordeon__button::after {
+.is-nojs span::after {
   display: none;
 }
 
@@ -1475,12 +1485,12 @@ button,
   display: block;
 }
 
-.is-active .accordeon__button::after {
+.is-active span::after {
   background: url("../img/svg/arrow-up.svg");
 }
 
 .gallery {
-  padding-top: 33px;
+  padding-top: 35px;
   padding-bottom: 129px;
   text-align: center;
 }
@@ -1620,6 +1630,7 @@ button,
   min-height: 40px;
   background-color: rgba(255, 255, 255, 0);
   border: none;
+  color: #ffffff;
 }
 
 .form-sign__wrapper input::-webkit-input-placeholder {
@@ -1816,15 +1827,12 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  background-color: #ffffff;
 }
 
 .form-filter__list {
   margin-bottom: 35px;
   border: 1px solid #a87b62;
-}
-
-.form-filter__item {
-  padding: 22px 20px;
 }
 
 .form-filter__item:not(:last-child) {
@@ -1833,11 +1841,13 @@ button,
 
 .form-filter__button {
   width: 100%;
+  padding: 24px 22px 22px 24px;
   text-align: start;
   background-color: rgba(255, 255, 255, 0);
   border: none;
   line-height: 21px;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .form-filter__button:active {
@@ -1848,9 +1858,16 @@ button,
   display: none;
 }
 
+.form-filter__button span {
+  display: block;
+  width: 100%;
+}
+
 .form-filter__fields {
-  margin-top: 19px;
-  padding-left: 13px;
+  margin-top: -2px;
+  padding-left: 33px;
+  padding-bottom: 23px;
+  padding-right: 20px;
 }
 
 .form-filter__field:not(:last-child) {
@@ -1871,6 +1888,7 @@ button,
   line-height: 18px;
   font-weight: 500;
   position: relative;
+  cursor: pointer;
 }
 
 .form-filter__field label::before {
@@ -1926,8 +1944,7 @@ button,
 
 .range-filter__range-controls {
   position: relative;
-  margin-top: 23px;
-  margin-bottom: 10px;
+  margin: 3px 20px 10px;
 }
 
 .range-filter__scale {
@@ -1976,8 +1993,9 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-left: 42px;
-  margin-right: 17px;
+  margin-left: 62px;
+  margin-right: 35px;
+  margin-bottom: 22px;
 }
 
 .range-filter__price input {
@@ -2355,6 +2373,10 @@ button,
     fill: #1d1613;
   }
 
+  .logo--active svg:hover {
+    fill: #a87b62;
+  }
+
   .product-nav__link:hover {
     opacity: 0.6;
   }
@@ -2511,7 +2533,7 @@ button,
   }
 
   .nav__search {
-    padding: 35px 0;
+    padding: 35px 0 25px;
     -webkit-box-ordinal-group: 11;
     -ms-flex-order: 10;
     order: 10;
@@ -2755,6 +2777,7 @@ button,
 
   .promo {
     margin-bottom: 30px;
+    background-image: url("../img/main/bg-main-tablet.jpg");
   }
 
   .promo__wrapper h2 {
@@ -2893,21 +2916,16 @@ button,
     margin: 0;
   }
 
-  .questions__item {
-    padding: 44px 50px 43px 50px;
-  }
-
   .questions__item p {
-    margin-top: 23px;
+    margin-top: -17px;
     padding-right: 8%;
-    padding-left: 0;
   }
 
   .questions__button {
-    padding: 0;
+    padding: 44px 50px 43px 50px;
   }
 
-  .accordeon__button::after {
+  .accordeon__button span::after {
     width: 25px;
     height: 14px;
   }
@@ -3016,13 +3034,15 @@ button,
   }
 
   .form-filter__button {
+    padding: 34px 38px 34px 40px;
     font-size: 18px;
     line-height: 23px;
   }
 
   .form-filter__fields {
-    margin-top: 21px;
-    padding-left: 14px;
+    margin-top: -12px;
+    padding-left: 49px;
+    padding-bottom: 36px;
   }
 
   .form-filter__field:not(:last-child) {
@@ -3098,10 +3118,6 @@ button,
     margin-bottom: 40px;
   }
 
-  .is-mobile .form-filter__item {
-    padding: 33px 35px 34px;
-  }
-
   .is-mobile .form-filter__button-submit {
     margin: 0 40px 26px;
   }
@@ -3112,9 +3128,9 @@ button,
   }
 
   .range-filter__range-controls {
-    margin-top: 33px;
-    margin-right: 50px;
-    margin-left: 13px;
+    margin-top: 0;
+    margin-right: 85px;
+    margin-left: 48px;
     margin-bottom: 13px;
   }
 
@@ -3137,9 +3153,9 @@ button,
   }
 
   .range-filter__price-controls {
-    margin-left: 52px;
-    margin-right: 98px;
-    margin-bottom: 5px;
+    margin-left: 87px;
+    margin-right: 133px;
+    margin-bottom: 39px;
   }
 
   .range-filter__price input {
@@ -3196,6 +3212,12 @@ button,
   }
 }
 
+@media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1023px), (-o-min-device-pixel-ratio: 3/2) and (max-width: 1023px), (min-resolution: 144dpi) and (max-width: 1023px), (min-resolution: 1.5dppx) and (max-width: 1023px) {
+  .promo {
+    background-image: url("../img/main/bg-main-tablet@2x.jpgs");
+  }
+}
+
 @media (max-width: 1023px) and (max-width: 767px) {
   .is-mobile {
     padding-bottom: 60px;
@@ -3213,10 +3235,6 @@ button,
 
   .is-mobile .form-filter__list {
     margin-bottom: 30px;
-  }
-
-  .is-mobile .form-filter__item {
-    padding: 23px 15px 24.5px;
   }
 
   .is-mobile .form-filter__button-submit {
@@ -3270,6 +3288,7 @@ button,
 
   .promo {
     margin-bottom: 29px;
+    background-image: url("../img/main/bg-main-mobile.jpg");
   }
 
   .promo__wrapper {
@@ -3382,19 +3401,17 @@ button,
     margin-bottom: 28px;
   }
 
-  .questions__item {
-    padding: 17px 25px 19px;
-  }
-
   .questions__item p {
-    margin-top: 16px;
-    padding-right: 13%;
+    margin-top: -5px;
+    padding-left: 23px;
+    padding-right: 20%;
+    padding-bottom: 19px;
     font-size: 14px;
     line-height: 20px;
   }
 
   .questions__button {
-    padding-right: 10px;
+    padding: 18px 24px 20px;
     font-size: 16px;
     line-height: 21px;
   }
@@ -3518,10 +3535,20 @@ button,
     margin-bottom: 0;
   }
 
+  .form-filter__button {
+    padding: 24px 17px 22px 21px;
+  }
+
+  .form-filter__fields {
+    margin-top: 0;
+    padding-left: 29px;
+    padding-bottom: 28px;
+  }
+
   .range-filter__range-controls {
-    margin-top: 30px;
-    margin-right: 0;
-    margin-left: 0;
+    margin-top: 13px;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 
   .range-filter__bar {
@@ -3530,16 +3557,17 @@ button,
   }
 
   .range-filter__toggle--min {
-    left: 35px;
+    left: 40px;
   }
 
   .range-filter__toggle--max {
-    right: 49px;
+    right: 54px;
   }
 
   .range-filter__price-controls {
-    margin-left: 27px;
-    margin-right: 30px;
+    margin-left: 42px;
+    margin-right: 45px;
+    margin-bottom: 30px;
   }
 
   .products__list {
@@ -3551,6 +3579,7 @@ button,
 
   .products__link img {
     min-height: 136px;
+    margin: 0 auto;
     margin-bottom: 15px;
   }
 
@@ -3615,6 +3644,12 @@ button,
 
   .login__form {
     padding: 50px 0;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 767px), (-o-min-device-pixel-ratio: 3/2) and (max-width: 767px), (min-resolution: 144dpi) and (max-width: 767px), (min-resolution: 1.5dppx) and (max-width: 767px) {
+  .promo {
+    background-image: url("../img/main/bg-main-mobile@2x.jpg");
   }
 }
 

@@ -13,14 +13,14 @@ const initFilter = () => {
     const closeFilter = function () {
       filter.classList.remove('is-opened');
       filter.classList.add('is-closed');
-      siteBody.classList.remove('overflow-hidden');
+      siteBody.classList.remove('scroll-lock');
       buttonFilterClose.removeEventListener('click', closeFilter);
     };
 
     const openFilter = function () {
       filter.classList.remove('is-closed');
       filter.classList.add('is-opened');
-      siteBody.classList.add('overflow-hidden');
+      siteBody.classList.add('scroll-lock');
     };
 
     buttonFilterOpen.addEventListener('click', function () {

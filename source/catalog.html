@@ -10,7 +10,7 @@
     <link rel="icon" href="favicon/favicon.ico">
     <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicon/180.png">
-    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="manifest" href="favicon/manifest.webmanifest">
     <link rel="preload" href="fonts/poppins-medium.woff" as="font">
   </head>
   <body class="page__body">
@@ -46,7 +46,7 @@
               </div>
               <div class="nav__user-nav">
                 <a class="nav__user-link nav__user-link--login" href="login.html" data-open-modal>Login</a>
-                <a class="nav__user-link nav__user-link--cart" href="#">
+                <a class="nav__user-link nav__user-link--cart" href="#" aria-label="viewcart">
                   <span>Cart<b>0</b></span>
                 </a>
               </div>
@@ -98,7 +98,7 @@
                     <button class="form-filter__button-close" type="button" data-close-filter></button>
                     <div class="form-filter__list">
                       <div class="form-filter__item accordeon__item is-active" id="product" data-accordeon-item>
-                        <button class="form-filter__button accordeon__button" type="button" data-button="product">Product</button>
+                        <button class="form-filter__button accordeon__button" type="button" data-button="product"><span data-button="product">Product</span></button>
                         <div class="form-filter__fields accordeon__content">
                           <div class="form-filter__field">
                             <input class="visually-hidden" type="checkbox" name="necklaces" id="necklaces" checked>
@@ -119,7 +119,7 @@
                         </div>
                       </div>
                       <div class="form-filter__item accordeon__item" id="material" data-accordeon-item>
-                        <button class="form-filter__button accordeon__button" type="button" data-button="material">Material</button>
+                        <button class="form-filter__button accordeon__button" type="button" data-button="material"><span data-button="material">Material</span></button>
                         <div class="form-filter__fields accordeon__content">
                           <div class="form-filter__field">
                             <input class="visually-hidden" type="checkbox" name="gold" id="gold">
@@ -132,7 +132,7 @@
                         </div>
                       </div>
                       <div class="form-filter__item accordeon__item" id="collection" data-accordeon-item>
-                        <button class="form-filter__button accordeon__button" type="button" data-button="collection">Collection</button>
+                        <button class="form-filter__button accordeon__button" type="button" data-button="collection"><span data-button="collection">Collection</span></button>
                         <div class="form-filter__fields accordeon__content">
                           <div class="form-filter__field">
                             <input class="visually-hidden" type="checkbox" name="pink-flamingo" id="pink-flamingo">
@@ -145,7 +145,7 @@
                         </div>
                       </div>
                       <div class="form-filter__item accordeon__item is-active" id="price" data-accordeon-item>
-                        <button class="form-filter__button accordeon__button" type="button" data-button="price">Price</button>
+                        <button class="form-filter__button accordeon__button" type="button" data-button="price"><span data-button="price">Price</span></button>
                         <div class="form-filter__range-filter range-filter accordeon__content">
                           <div class="range-filter__range-controls">
                             <div class="range-filter__scale">
@@ -337,7 +337,7 @@
               <form action="#" method="get">
                 <div class="form-sign__wrapper">
                   <label class="visually-hidden" for="e-mail">Your E-mail</label>
-                  <input type="text" placeholder="Your E-mail" name="mail" required id="e-mail">
+                  <input type="email" placeholder="Your E-mail" name="mail" required id="e-mail">
                   <button class="form-sign__button" type="submit">
                     <span>Sign Up</span>
                     <svg width="30" height="11">
@@ -370,7 +370,7 @@
                 <h3 class="visually-hidden">Connection with us</h3>
                 <ul>
                   <li>
-                    <a class="social__link social__link--facebook" href="#">
+                    <a class="social__link social__link--facebook" href="#" aria-label="facebook">
                       <svg width="8" height="15">
                         <use xlink:href="img/sprite_auto.svg#icon-facebook"></use>
                       </svg>
@@ -378,7 +378,7 @@
                     </a>
                   </li>
                   <li>
-                    <a class="social__link" href="#">
+                    <a class="social__link" href="#" aria-label="instagram">
                       <svg width="15" height="15">
                         <use xlink:href="img/sprite_auto.svg#icon-instagram"></use>
                       </svg>
@@ -386,7 +386,7 @@
                     </a>
                   </li>
                   <li>
-                    <a class="social__link" href="#">
+                    <a class="social__link" href="#" aria-label="pinterest">
                       <svg width="15" height="15">
                         <use xlink:href="img/sprite_auto.svg#icon-pinterest"></use>
                       </svg>
@@ -394,7 +394,7 @@
                     </a>
                   </li>
                   <li>
-                    <a class="social__link social__link--twitter" href="#">
+                    <a class="social__link social__link--twitter" href="#" aria-label="twitter">
                       <svg width="15" height="13">
                         <use xlink:href="img/sprite_auto.svg#icon-twitter"></use>
                       </svg>

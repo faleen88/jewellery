@@ -35,7 +35,7 @@ const initModal = () => {
       closePopupButton.removeEventListener('click', closePopupHandler);
       modalOverlay.removeEventListener('click', closePopupOverlay);
       modalPopup.removeEventListener('keydown', keyDownHandler);
-      siteBody.classList.remove('overflow-hidden');
+      siteBody.classList.remove('scroll-lock');
       lastFocusedElement.focus();
     };
 
@@ -130,7 +130,7 @@ const initModal = () => {
       modalPopup.addEventListener('keydown', keyDownHandler);
       closePopupButton.addEventListener('click', closePopupHandler);
       modalOverlay.addEventListener('click', closePopupOverlay);
-      siteBody.classList.add('overflow-hidden');
+      siteBody.classList.add('scroll-lock');
     };
 
     openPopupLinks.forEach((link) => {

@@ -1,6 +1,7 @@
 .form-filter form {
   display: flex;
   flex-direction: column;
+  background-color: $color-default-white;
 }
 
 .form-filter__list {
@@ -9,8 +10,6 @@
 }
 
 .form-filter__item {
-  padding: 22px 20px;
-
   &:not(:last-child) {
     border-bottom: 1px solid $color-medium-wood;
   }
@@ -22,15 +21,22 @@
 
 .form-filter__button {
   width: 100%;
+  padding: 24px 22px 22px 24px;
   text-align: start;
   background-color: $color-transparent;
   border: none;
   line-height: 21px;
   font-weight: 500;
+  cursor: pointer;
 
   @include vp-1023 {
+    padding: 34px 38px 34px 40px;
     font-size: 18px;
     line-height: 23px;
+  }
+
+  @include vp-767 {
+    padding: 24px 17px 22px 21px;
   }
 
   @media (hover: hover), screen and (min-width: 0\0) {
@@ -48,13 +54,27 @@
   display: none;
 }
 
+.form-filter__button span {
+  display: block;
+  width: 100%;
+}
+
 .form-filter__fields {
-  margin-top: 19px;
-  padding-left: 13px;
+  margin-top: -2px;
+  padding-left: 33px;
+  padding-bottom: 23px;
+  padding-right: 20px;
 
   @include vp-1023 {
-    margin-top: 21px;
-    padding-left: 14px;
+    margin-top: -12px;
+    padding-left: 49px;
+    padding-bottom: 36px;
+  }
+
+  @include vp-767 {
+    margin-top: 0;
+    padding-left: 29px;
+    padding-bottom: 28px;
   }
 }
 
@@ -90,6 +110,7 @@
   line-height: 18px;
   font-weight: 500;
   position: relative;
+  cursor: pointer;
 
   @include vp-1023 {
     padding-left: 30px;
@@ -232,14 +253,6 @@
 
       @include vp-767 {
         margin-bottom: 30px;
-      }
-    }
-
-    .form-filter__item {
-      padding: 33px 35px 34px;
-
-      @include vp-767 {
-        padding: 23px 15px 24.5px;
       }
     }
 
